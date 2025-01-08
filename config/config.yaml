@@ -1,5 +1,19 @@
 paths:
   artifacts_dir: "artifacts"
-  
 
-  
+symbols:
+  currencies:
+    - BTC
+    - ETH
+    - BNB
+    - USDT
+    - ADA
+    - SOL
+    - AVAX
+    - MATIC
+    - LINK
+    - XRP
+    - DOGEVERSE
+    - SEAL
+    - WAI
+    - SPONGEV2

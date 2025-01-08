@@ -2,7 +2,7 @@ import sys
 import os
 from box.exceptions import BoxValueError
 import yaml
-from FoodRecognition.constants.logging import logger
+from PortfolioOptimizer.logging import logger
 from ensure import ensure_annotations
 from box import ConfigBox
 from datetime import datetime
