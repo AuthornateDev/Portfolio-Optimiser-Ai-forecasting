@@ -1,19 +1,13 @@
 paths:
   artifacts_dir: "artifacts"
+  processed_dir : "artifacts/Processed_DFs"
+  foresast_dir : "artifacts/Forecasts"
 
 symbols:
   currencies:
-    - BTC
-    - ETH
-    - BNB
-    - USDT
-    - ADA
-    - SOL
-    - AVAX
-    - MATIC
-    - LINK
-    - XRP
-    - DOGEVERSE
-    - SEAL
-    - WAI
-    - SPONGEV2
+    - BTCUSDT
+    - ETHUSDT
+    - BNBUSDT
+
+forecast_period: 180
+
