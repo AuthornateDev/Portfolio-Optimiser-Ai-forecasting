@@ -1,0 +1,15 @@
+[2025-01-15T12:20:11.602+0500] {processor.py:186} INFO - Started process (PID=36381) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-01-15T12:20:11.603+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-01-15T12:20:11.604+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:11.604+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-01-15T12:20:11.666+0500] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-01-15T12:20:11.874+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:11.873+0500] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_sla_dag
+[2025-01-15T12:20:11.884+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:11.884+0500] {override.py:1912} INFO - Created Permission View: can read on DAG:example_sla_dag
+[2025-01-15T12:20:11.891+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:11.891+0500] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_sla_dag
+[2025-01-15T12:20:11.901+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:11.901+0500] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_sla_dag
+[2025-01-15T12:20:11.908+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:11.908+0500] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_sla_dag
+[2025-01-15T12:20:11.916+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:11.916+0500] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_sla_dag
+[2025-01-15T12:20:11.925+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:11.924+0500] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_sla_dag
+[2025-01-15T12:20:11.925+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:11.925+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T12:20:11.940+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:11.940+0500] {dag.py:3262} INFO - Creating ORM DAG for example_sla_dag
+[2025-01-15T12:20:11.953+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:11.953+0500] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-01-15 07:18:00+00:00, run_after=2025-01-15 07:20:00+00:00
+[2025-01-15T12:20:11.972+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py took 0.375 seconds

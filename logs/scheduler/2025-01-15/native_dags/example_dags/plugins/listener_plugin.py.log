@@ -1,0 +1,5 @@
+[2025-01-15T12:19:07.919+0500] {processor.py:186} INFO - Started process (PID=36132) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2025-01-15T12:19:07.920+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
+[2025-01-15T12:19:07.921+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:19:07.921+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2025-01-15T12:19:07.924+0500] {processor.py:927} WARNING - No viable dags retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py
+[2025-01-15T12:19:08.039+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.126 seconds

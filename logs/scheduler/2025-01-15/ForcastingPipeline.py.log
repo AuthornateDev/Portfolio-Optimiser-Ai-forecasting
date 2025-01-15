@@ -1,0 +1,15 @@
+[2025-01-15T12:18:57.719+0500] {processor.py:186} INFO - Started process (PID=36088) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T12:18:57.721+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py for tasks to queue
+[2025-01-15T12:18:57.722+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:18:57.722+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T12:18:57.756+0500] {processor.py:925} INFO - DAG(s) 'ForecastingPipeline' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T12:18:58.048+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:18:58.047+0500] {override.py:1912} INFO - Created Permission View: can delete on DAG:ForecastingPipeline
+[2025-01-15T12:18:58.062+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:18:58.062+0500] {override.py:1912} INFO - Created Permission View: can read on DAG:ForecastingPipeline
+[2025-01-15T12:18:58.074+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:18:58.073+0500] {override.py:1912} INFO - Created Permission View: can edit on DAG:ForecastingPipeline
+[2025-01-15T12:18:58.083+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:18:58.083+0500] {override.py:1912} INFO - Created Permission View: can read on DAG Run:ForecastingPipeline
+[2025-01-15T12:18:58.093+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:18:58.092+0500] {override.py:1912} INFO - Created Permission View: can create on DAG Run:ForecastingPipeline
+[2025-01-15T12:18:58.100+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:18:58.099+0500] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:ForecastingPipeline
+[2025-01-15T12:18:58.108+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:18:58.108+0500] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:ForecastingPipeline
+[2025-01-15T12:18:58.109+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:18:58.109+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T12:18:58.120+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:18:58.119+0500] {dag.py:3262} INFO - Creating ORM DAG for ForecastingPipeline
+[2025-01-15T12:18:58.121+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:18:58.121+0500] {dag.py:4180} INFO - Setting next_dagrun for ForecastingPipeline to None, run_after=None
+[2025-01-15T12:18:58.139+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py took 0.424 seconds

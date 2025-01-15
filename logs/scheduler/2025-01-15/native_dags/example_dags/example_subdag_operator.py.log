@@ -1,0 +1,22 @@
+[2025-01-15T12:20:07.381+0500] {processor.py:186} INFO - Started process (PID=36371) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-01-15T12:20:07.383+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2025-01-15T12:20:07.384+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:07.384+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-01-15T12:20:07.505+0500] {processor.py:925} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py
+[2025-01-15T12:20:08.035+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.035+0500] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_subdag_operator
+[2025-01-15T12:20:08.046+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.046+0500] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_subdag_operator
+[2025-01-15T12:20:08.053+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.052+0500] {override.py:1912} INFO - Created Permission View: can read on DAG:example_subdag_operator
+[2025-01-15T12:20:08.062+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.062+0500] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_subdag_operator
+[2025-01-15T12:20:08.069+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.068+0500] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_subdag_operator
+[2025-01-15T12:20:08.075+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.075+0500] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_subdag_operator
+[2025-01-15T12:20:08.083+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.083+0500] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_subdag_operator
+[2025-01-15T12:20:08.084+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.084+0500] {dag.py:3239} INFO - Sync 3 DAGs
+[2025-01-15T12:20:08.096+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.095+0500] {dag.py:3262} INFO - Creating ORM DAG for example_subdag_operator.section-1
+[2025-01-15T12:20:08.096+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.096+0500] {dag.py:3262} INFO - Creating ORM DAG for example_subdag_operator
+[2025-01-15T12:20:08.097+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.097+0500] {dag.py:3262} INFO - Creating ORM DAG for example_subdag_operator.section-2
+[2025-01-15T12:20:08.104+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.104+0500] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2025-01-15T12:20:08.105+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.105+0500] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2025-01-15T12:20:08.105+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.105+0500] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2025-01-15T12:20:08.111+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.111+0500] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-01-15T12:20:08.115+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.114+0500] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2025-01-15T12:20:08.117+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:08.117+0500] {dag.py:4180} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2025-01-15T12:20:08.131+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_subdag_operator.py took 0.756 seconds

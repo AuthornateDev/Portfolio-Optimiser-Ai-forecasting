@@ -1,0 +1,38 @@
+version: '3.0'
+
+networks:
+  app_network:
+    driver: bridge
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: Forecasting_Pipeline
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    networks:
+      - app_network
+
+  # airflow:
+  #   image: apache/airflow:2.10.4
+  #   container_name: airflow
+  #   ports:
+  #     - "8080:8080"
+  #   environment:
+  #     - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+  #     - AIRFLOW__CORE__FERNET_KEY=fernet_key_for_encryption
+  #     - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=True
+  #     - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////usr/local/airflow/airflow.db
+  #     - AIRFLOW__WEBSERVER__ENABLE_PROXY_FIX=True
+  #   volumes:
+  #     - ./dags:/opt/airflow/dags
+  #     - ./logs:/opt/airflow/logs
+  #     - ./plugins:/opt/airflow/plugins
+  #   command: ["webserver"]
+  #   networks:
+  #     - app_network
+

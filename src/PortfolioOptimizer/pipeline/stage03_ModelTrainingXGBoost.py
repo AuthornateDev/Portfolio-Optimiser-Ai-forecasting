@@ -40,8 +40,8 @@ def main():
         logger.info(f"Saving forecast results for {symbol}.")
         xgboost_forecasting.save_forecast(forecast, coin_name=symbol)
 
-        logger.info(f"Plotting forecast results for {symbol}.")
-        xgboost_forecasting.plot_forecast(forecast, coin_name=symbol)
+        # logger.info(f"Plotting forecast results for {symbol}.")
+        # xgboost_forecasting.plot_forecast(forecast, coin_name=symbol)
 
 if __name__ == "__main__":
     main()
