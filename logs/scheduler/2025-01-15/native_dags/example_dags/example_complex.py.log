@@ -1,0 +1,36 @@
+[2025-01-15T23:23:14.573+0500] {processor.py:186} INFO - Started process (PID=4026) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-01-15T23:23:14.575+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-01-15T23:23:14.577+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:14.576+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-01-15T23:23:14.603+0500] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-01-15T23:23:15.020+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:15.019+0500] {override.py:1912} INFO - Created Permission View: can read on DAG:example_complex
+[2025-01-15T23:23:15.031+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:15.031+0500] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_complex
+[2025-01-15T23:23:15.041+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:15.041+0500] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_complex
+[2025-01-15T23:23:15.052+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:15.051+0500] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_complex
+[2025-01-15T23:23:15.059+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:15.059+0500] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_complex
+[2025-01-15T23:23:15.069+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:15.068+0500] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_complex
+[2025-01-15T23:23:15.077+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:15.076+0500] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_complex
+[2025-01-15T23:23:15.077+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:15.077+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T23:23:15.090+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:15.089+0500] {dag.py:3262} INFO - Creating ORM DAG for example_complex
+[2025-01-15T23:23:15.090+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:15.090+0500] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-01-15T23:23:15.109+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.541 seconds
+[2025-01-15T23:27:42.470+0500] {processor.py:186} INFO - Started process (PID=5249) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-01-15T23:27:42.473+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-01-15T23:27:42.476+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:27:42.475+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-01-15T23:27:42.499+0500] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-01-15T23:27:42.709+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:27:42.708+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T23:27:42.725+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:27:42.724+0500] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-01-15T23:27:42.752+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.287 seconds
+[2025-01-15T23:34:15.768+0500] {processor.py:186} INFO - Started process (PID=7201) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-01-15T23:34:15.771+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-01-15T23:34:15.773+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:34:15.773+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-01-15T23:34:15.792+0500] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-01-15T23:34:15.919+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:34:15.918+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T23:34:15.930+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:34:15.929+0500] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-01-15T23:34:15.950+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.186 seconds
+[2025-01-15T23:39:53.210+0500] {processor.py:186} INFO - Started process (PID=8734) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-01-15T23:39:53.213+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-01-15T23:39:53.215+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:39:53.215+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-01-15T23:39:53.233+0500] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py
+[2025-01-15T23:39:53.391+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:39:53.391+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T23:39:53.405+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:39:53.405+0500] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-01-15T23:39:53.429+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_complex.py took 0.224 seconds

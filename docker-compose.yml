@@ -14,8 +14,10 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
+      - ./static:/app/static  
     networks:
       - app_network
+
 
   # airflow:
   #   image: apache/airflow:2.10.4

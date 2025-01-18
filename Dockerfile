@@ -5,15 +5,13 @@ WORKDIR /app
 
 COPY . /app
 
-RUN apt update -y && apt install -y awscli
+RUN mkdir -p /app/static && chmod 777 /app/static
 
 RUN apt-get update \
-    && apt-get upgrade -y \
-    && apt-get install -y gcc default-libmysqlclient-dev pkg-config wget \
-    && rm -rf /var/lib/apt/lists/*
+    && apt-get upgrade -y 
 
 RUN pip3 install --no-cache-dir -r /app/requirements.txt
 
 EXPOSE 8000
 
-CMD ["sh", "-c", "python src/PortfolioOptimizer/pipeline/pipeline.py && python main.py"]
+CMD ["sh", "-c", "mkdir -p /app/static && python src/PortfolioOptimizer/pipeline/pipeline.py && python main.py"]

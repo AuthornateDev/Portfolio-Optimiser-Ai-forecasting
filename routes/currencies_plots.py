@@ -1,8 +1,9 @@
 import os
 import pandas as pd
-import uuid
+import io
+import matplotlib.pyplot as plt
 from fastapi import APIRouter, HTTPException, Query
-from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
+from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from PortfolioOptimizer.utils.utils import read_yaml
 from PortfolioOptimizer.components.modelforecasting import ModelForecasting
@@ -55,6 +56,54 @@ def generate_plot(symbol):
         return fig.to_html(full_html=False, include_plotlyjs=True)  
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail=f"Data files for {symbol} are missing!")
+    
+
+def generate_matplotlib_plot(symbol):
+    """
+    Generate an enhanced Matplotlib forecast plot for a given symbol.
+    """
+    try:
+        historical_data, forecast_data = model_forecasting.load_data(symbol)
+        
+        forecast_start_date = forecast_data['ds'].iloc[0]
+        today_date = pd.Timestamp.now().normalize()
+        
+        current_value = None
+        if today_date in historical_data['ds'].values:
+            current_value = historical_data.loc[historical_data['ds'] == today_date, 'y'].values[0]
+        
+        plt.figure(figsize=(16, 9))
+        plt.plot(historical_data['ds'], historical_data['y'], label="Historical Data", color="black", linewidth=2)
+        plt.plot(forecast_data['ds'], forecast_data['yhat'], label="Forecast", color="red", linestyle="--", linewidth=2)
+        
+        plt.axvline(forecast_start_date, color="blue", linestyle="--", linewidth=1.5, label="Forecast Start")
+        
+        if current_value is not None:
+            plt.scatter(today_date, current_value, color="green", label=f"Today's Value: {current_value:.2f}", zorder=5)
+            plt.text(
+                today_date, current_value, f" {current_value:.2f}",
+                color="green", fontsize=10, fontweight="bold", verticalalignment="bottom"
+            )
+
+        plt.title(f"{symbol} Forecasting with Highlights", fontsize=18, fontweight="bold")
+        plt.xlabel("Date", fontsize=14)
+        plt.ylabel("Value", fontsize=14)
+        plt.xticks(fontsize=12)
+        plt.yticks(fontsize=12)
+        plt.legend(fontsize=12)
+        plt.grid(True, linestyle="--", alpha=0.6)
+        
+        buffer = io.BytesIO()
+        plt.tight_layout()
+        plt.savefig(buffer, format="png", dpi=150)
+        buffer.seek(0)
+        plt.close()
+
+        return buffer
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail=f"Data files for {symbol} are missing!")
+
+
 
 @router.get("/CoinsForecasting")
 async def get_forecast(currencies: str = Query(..., description="Comma-separated list of currency symbols"), display: bool = Query(False, description="Whether to display the plots directly")):
@@ -125,3 +174,20 @@ async def display_plots(filename: str):
     with open(file_path, "r") as f:
         content = f.read()
     return HTMLResponse(content=content)
+
+@router.get("/CoinsForecastingEnhanced")
+async def get_forecast_enhanced(currencies: str = Query(..., description="Comma-separated list of currency symbols")):
+    selected_currencies = currencies.split(",")
+    invalid_currencies = [sym for sym in selected_currencies if sym not in symbols]
+
+    if invalid_currencies:
+        raise HTTPException(status_code=400, detail=f"Invalid symbols: {', '.join(invalid_currencies)}")
+
+    # Assuming only one symbol for this route to keep it simple
+    if len(selected_currencies) > 1:
+        raise HTTPException(status_code=400, detail="This route supports one symbol at a time.")
+
+    symbol = selected_currencies[0]
+    buffer = generate_matplotlib_plot(symbol)
+
+    return StreamingResponse(buffer, media_type="image/png")

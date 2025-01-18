@@ -13,3 +13,59 @@
 [2025-01-15T12:18:58.120+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:18:58.119+0500] {dag.py:3262} INFO - Creating ORM DAG for ForecastingPipeline
 [2025-01-15T12:18:58.121+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:18:58.121+0500] {dag.py:4180} INFO - Setting next_dagrun for ForecastingPipeline to None, run_after=None
 [2025-01-15T12:18:58.139+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py took 0.424 seconds
+[2025-01-15T23:19:43.934+0500] {processor.py:186} INFO - Started process (PID=3014) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:19:43.937+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py for tasks to queue
+[2025-01-15T23:19:43.939+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:19:43.939+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:19:43.993+0500] {processor.py:925} INFO - DAG(s) 'ForecastingPipeline' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:19:44.146+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:19:44.146+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T23:19:44.158+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:19:44.158+0500] {dag.py:4180} INFO - Setting next_dagrun for ForecastingPipeline to None, run_after=None
+[2025-01-15T23:19:44.180+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py took 0.250 seconds
+[2025-01-15T23:23:54.251+0500] {processor.py:186} INFO - Started process (PID=4200) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:23:54.253+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py for tasks to queue
+[2025-01-15T23:23:54.256+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:54.255+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:23:54.298+0500] {processor.py:925} INFO - DAG(s) 'ForecastingPipeline' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:23:54.636+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:54.635+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T23:23:54.661+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:23:54.660+0500] {dag.py:4180} INFO - Setting next_dagrun for ForecastingPipeline to None, run_after=None
+[2025-01-15T23:23:54.733+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py took 0.487 seconds
+[2025-01-15T23:27:54.333+0500] {processor.py:186} INFO - Started process (PID=5307) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:27:54.335+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py for tasks to queue
+[2025-01-15T23:27:54.339+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:27:54.338+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:27:54.410+0500] {processor.py:925} INFO - DAG(s) 'ForecastingPipeline' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:27:54.721+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:27:54.721+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T23:27:54.741+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:27:54.741+0500] {dag.py:4180} INFO - Setting next_dagrun for ForecastingPipeline to None, run_after=None
+[2025-01-15T23:27:54.805+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py took 0.477 seconds
+[2025-01-15T23:31:30.438+0500] {processor.py:186} INFO - Started process (PID=6446) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:31:30.440+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py for tasks to queue
+[2025-01-15T23:31:30.442+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:31:30.442+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:31:30.479+0500] {processor.py:925} INFO - DAG(s) 'ForecastingPipeline' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:31:30.615+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:31:30.615+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T23:31:30.626+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:31:30.625+0500] {dag.py:4180} INFO - Setting next_dagrun for ForecastingPipeline to None, run_after=None
+[2025-01-15T23:31:30.650+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py took 0.217 seconds
+[2025-01-15T23:34:22.466+0500] {processor.py:186} INFO - Started process (PID=7227) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:34:22.469+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py for tasks to queue
+[2025-01-15T23:34:22.471+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:34:22.470+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:34:22.498+0500] {processor.py:925} INFO - DAG(s) 'ForecastingPipeline' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:34:22.604+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:34:22.603+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T23:34:22.614+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:34:22.614+0500] {dag.py:4180} INFO - Setting next_dagrun for ForecastingPipeline to None, run_after=None
+[2025-01-15T23:34:22.635+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py took 0.173 seconds
+[2025-01-15T23:37:12.088+0500] {processor.py:186} INFO - Started process (PID=7995) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:37:12.090+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py for tasks to queue
+[2025-01-15T23:37:12.092+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:37:12.091+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:37:12.120+0500] {processor.py:925} INFO - DAG(s) 'ForecastingPipeline' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:37:12.222+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:37:12.221+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T23:37:12.233+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:37:12.233+0500] {dag.py:4180} INFO - Setting next_dagrun for ForecastingPipeline to None, run_after=None
+[2025-01-15T23:37:12.257+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py took 0.174 seconds
+[2025-01-15T23:40:01.577+0500] {processor.py:186} INFO - Started process (PID=8762) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:40:01.579+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py for tasks to queue
+[2025-01-15T23:40:01.582+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:40:01.581+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:40:01.622+0500] {processor.py:925} INFO - DAG(s) 'ForecastingPipeline' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:40:01.784+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:40:01.783+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T23:40:01.803+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:40:01.803+0500] {dag.py:4180} INFO - Setting next_dagrun for ForecastingPipeline to None, run_after=None
+[2025-01-15T23:40:01.828+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py took 0.256 seconds
+[2025-01-15T23:43:22.825+0500] {processor.py:186} INFO - Started process (PID=9549) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:43:22.827+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py for tasks to queue
+[2025-01-15T23:43:22.829+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:43:22.829+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:43:22.858+0500] {processor.py:925} INFO - DAG(s) 'ForecastingPipeline' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py
+[2025-01-15T23:43:22.973+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:43:22.972+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T23:43:22.983+0500] {logging_mixin.py:190} INFO - [2025-01-15T23:43:22.983+0500] {dag.py:4180} INFO - Setting next_dagrun for ForecastingPipeline to None, run_after=None
+[2025-01-15T23:43:23.004+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/src/PortfolioOptimizer/DAGS/ForcastingPipeline.py took 0.183 seconds

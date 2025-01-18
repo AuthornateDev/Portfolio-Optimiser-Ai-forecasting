@@ -1,3 +1,5 @@
 .venv/
 Experminets/
 artifacts/
+airflow*
+mlruns/
