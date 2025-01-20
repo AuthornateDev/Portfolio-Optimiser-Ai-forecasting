@@ -14,4 +14,7 @@ RUN pip3 install --no-cache-dir -r /app/requirements.txt
 
 EXPOSE 8000
 
-CMD ["sh", "-c", "mkdir -p /app/static && python src/PortfolioOptimizer/pipeline/pipeline.py && python main.py"]
+ENV PORT=8000
+
+CMD ["sh", "-c", "python src/PortfolioOptimizer/pipeline/pipeline.py && python main.py"]
+
