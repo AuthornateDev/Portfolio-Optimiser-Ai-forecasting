@@ -1,0 +1,15 @@
+[2025-01-15T12:20:18.146+0500] {processor.py:186} INFO - Started process (PID=36415) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-01-15T12:20:18.148+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py for tasks to queue
+[2025-01-15T12:20:18.150+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:18.149+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-01-15T12:20:18.191+0500] {processor.py:925} INFO - DAG(s) 'example_short_circuit_operator' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-01-15T12:20:18.600+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:18.599+0500] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_short_circuit_operator
+[2025-01-15T12:20:18.614+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:18.614+0500] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_short_circuit_operator
+[2025-01-15T12:20:18.625+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:18.624+0500] {override.py:1912} INFO - Created Permission View: can read on DAG:example_short_circuit_operator
+[2025-01-15T12:20:18.637+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:18.637+0500] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_short_circuit_operator
+[2025-01-15T12:20:18.646+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:18.645+0500] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_short_circuit_operator
+[2025-01-15T12:20:18.654+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:18.654+0500] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_short_circuit_operator
+[2025-01-15T12:20:18.664+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:18.664+0500] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_short_circuit_operator
+[2025-01-15T12:20:18.665+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:18.665+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T12:20:18.679+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:18.679+0500] {dag.py:3262} INFO - Creating ORM DAG for example_short_circuit_operator
+[2025-01-15T12:20:18.680+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:20:18.679+0500] {dag.py:4180} INFO - Setting next_dagrun for example_short_circuit_operator to None, run_after=None
+[2025-01-15T12:20:18.702+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_operator.py took 0.562 seconds

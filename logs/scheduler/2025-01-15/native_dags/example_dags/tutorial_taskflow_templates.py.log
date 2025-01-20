@@ -1,0 +1,15 @@
+[2025-01-15T12:19:19.579+0500] {processor.py:186} INFO - Started process (PID=36183) to work on /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_templates.py
+[2025-01-15T12:19:19.581+0500] {processor.py:914} INFO - Processing file /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_templates.py for tasks to queue
+[2025-01-15T12:19:19.582+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:19:19.582+0500] {dagbag.py:588} INFO - Filling up the DagBag from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_templates.py
+[2025-01-15T12:19:19.624+0500] {processor.py:925} INFO - DAG(s) 'tutorial_taskflow_templates' retrieved from /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_templates.py
+[2025-01-15T12:19:19.813+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:19:19.812+0500] {override.py:1912} INFO - Created Permission View: can delete on DAG:tutorial_taskflow_templates
+[2025-01-15T12:19:19.822+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:19:19.821+0500] {override.py:1912} INFO - Created Permission View: can read on DAG:tutorial_taskflow_templates
+[2025-01-15T12:19:19.831+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:19:19.831+0500] {override.py:1912} INFO - Created Permission View: can edit on DAG:tutorial_taskflow_templates
+[2025-01-15T12:19:19.839+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:19:19.839+0500] {override.py:1912} INFO - Created Permission View: can create on DAG Run:tutorial_taskflow_templates
+[2025-01-15T12:19:19.847+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:19:19.847+0500] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:tutorial_taskflow_templates
+[2025-01-15T12:19:19.853+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:19:19.853+0500] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:tutorial_taskflow_templates
+[2025-01-15T12:19:19.860+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:19:19.860+0500] {override.py:1912} INFO - Created Permission View: can read on DAG Run:tutorial_taskflow_templates
+[2025-01-15T12:19:19.861+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:19:19.861+0500] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-15T12:19:19.872+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:19:19.872+0500] {dag.py:3262} INFO - Creating ORM DAG for tutorial_taskflow_templates
+[2025-01-15T12:19:19.880+0500] {logging_mixin.py:190} INFO - [2025-01-15T12:19:19.880+0500] {dag.py:4180} INFO - Setting next_dagrun for tutorial_taskflow_templates to 2025-01-14 00:00:00+00:00, run_after=2025-01-15 00:00:00+00:00
+[2025-01-15T12:19:19.897+0500] {processor.py:208} INFO - Processing /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_templates.py took 0.324 seconds

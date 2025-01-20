@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 import uvicorn
-from routes import currencies_plots 
+from routes import currencies_plots, seaborn_plots
 
 app = FastAPI(
     title="Currency Forecast API",
@@ -12,6 +12,7 @@ app = FastAPI(
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 app.include_router(currencies_plots.router)
+app.include_router(seaborn_plots.router)
 
 @app.get("/")
 async def root():

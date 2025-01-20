@@ -103,365 +103,316 @@
 
 
 2025-01-15 16:03:56,592 - pipeline.py - None - INFO - Completed the PortfolioOptimizer Pipeline.
-2025-01-15 21:51:41,123 - pipeline.py - None - INFO - Starting the PortfolioOptimizer Pipeline.
-2025-01-15 21:51:41,124 - pipeline.py - None - INFO - Reading configuration for the pipeline.
-2025-01-15 21:51:41,127 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 01: Data Ingestion 🫠 <<<<<<<<<<<<< 
-2025-01-15 21:51:42,998 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BTCUSDT
-2025-01-15 21:51:46,384 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ETHUSDT
-2025-01-15 21:51:48,151 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BNBUSDT
-2025-01-15 21:51:49,111 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DOGEUSDT
-2025-01-15 21:51:49,945 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LINKUSDT
-2025-01-15 21:51:51,569 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DOTUSDT
-2025-01-15 21:51:52,222 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LTCUSDT
-2025-01-15 21:51:53,566 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for XRPUSDT
-2025-01-15 21:51:54,627 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for SOLUSDT
-2025-01-15 21:51:55,502 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ADAUSDT
-2025-01-15 21:51:55,502 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 01: Data Ingestion 👍 <<<<<<<<<<<<< 
+2025-01-20 18:24:00,961 - pipeline.py - None - INFO - Starting the PortfolioOptimizer Pipeline.
+2025-01-20 18:24:00,962 - pipeline.py - None - INFO - Reading configuration for the pipeline.
+2025-01-20 18:24:00,963 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 01: Data Ingestion 🫠 <<<<<<<<<<<<< 
+2025-01-20 18:24:01,398 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BTCUSDT
+2025-01-20 18:24:01,760 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ETHUSDT
+2025-01-20 18:24:02,100 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BNBUSDT
+2025-01-20 18:24:02,100 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 01: Data Ingestion 👍 <<<<<<<<<<<<< 
 
 
-2025-01-15 21:51:55,503 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 02: Data Processing 🫠 <<<<<<<<<<<<< 
-2025-01-15 21:51:57,129 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BTCUSDT_Featured.csv
-2025-01-15 21:51:58,483 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ETHUSDT_Featured.csv
-2025-01-15 21:52:03,560 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BNBUSDT_Featured.csv
-2025-01-15 21:52:08,130 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DOGEUSDT_Featured.csv
-2025-01-15 21:52:12,507 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LINKUSDT_Featured.csv
-2025-01-15 21:52:16,651 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DOTUSDT_Featured.csv
-2025-01-15 21:52:20,995 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LTCUSDT_Featured.csv
-2025-01-15 21:52:24,936 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/XRPUSDT_Featured.csv
-2025-01-15 21:52:29,218 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/SOLUSDT_Featured.csv
-2025-01-15 21:52:33,143 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ADAUSDT_Featured.csv
-2025-01-15 21:52:33,143 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 02: Data Processing 👍 <<<<<<<<<<<<< 
+2025-01-20 18:24:02,100 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 02: Data Processing 🫠 <<<<<<<<<<<<< 
+2025-01-20 18:24:03,475 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BTCUSDT_Featured.csv
+2025-01-20 18:24:04,735 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ETHUSDT_Featured.csv
+2025-01-20 18:24:08,785 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BNBUSDT_Featured.csv
+2025-01-20 18:24:08,786 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 02: Data Processing 👍 <<<<<<<<<<<<< 
 
 
-2025-01-15 21:52:33,144 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 03: Model Training 🫠 <<<<<<<<<<<<< 
-2025-01-15 21:52:33,146 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BTCUSDT from artifacts/Processed_DFs/BTCUSDT_Featured.csv
-2025-01-15 21:52:33,158 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BTCUSDT.
-2025-01-15 21:52:33,192 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BTCUSDT.
-2025-01-15 21:52:34,553 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BTCUSDT.
-2025-01-15 21:52:34,563 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BTCUSDT.
-2025-01-15 21:52:34,568 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BTCUSDT_Forecast.csv
-2025-01-15 21:52:34,568 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for ETHUSDT from artifacts/Processed_DFs/ETHUSDT_Featured.csv
-2025-01-15 21:52:34,581 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for ETHUSDT.
-2025-01-15 21:52:34,585 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for ETHUSDT.
-2025-01-15 21:52:35,836 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for ETHUSDT.
-2025-01-15 21:52:35,844 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for ETHUSDT.
-2025-01-15 21:52:35,847 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/ETHUSDT_Forecast.csv
-2025-01-15 21:52:35,848 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BNBUSDT from artifacts/Processed_DFs/BNBUSDT_Featured.csv
-2025-01-15 21:52:35,862 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BNBUSDT.
-2025-01-15 21:52:35,866 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BNBUSDT.
-2025-01-15 21:52:36,883 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BNBUSDT.
-2025-01-15 21:52:36,893 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BNBUSDT.
-2025-01-15 21:52:36,896 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BNBUSDT_Forecast.csv
-2025-01-15 21:52:36,896 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for DOGEUSDT from artifacts/Processed_DFs/DOGEUSDT_Featured.csv
-2025-01-15 21:52:36,908 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for DOGEUSDT.
-2025-01-15 21:52:36,911 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for DOGEUSDT.
-2025-01-15 21:52:39,064 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for DOGEUSDT.
-2025-01-15 21:52:39,073 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for DOGEUSDT.
-2025-01-15 21:52:39,076 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/DOGEUSDT_Forecast.csv
-2025-01-15 21:52:39,076 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for LINKUSDT from artifacts/Processed_DFs/LINKUSDT_Featured.csv
-2025-01-15 21:52:39,092 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for LINKUSDT.
-2025-01-15 21:52:39,100 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for LINKUSDT.
-2025-01-15 21:52:40,847 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for LINKUSDT.
-2025-01-15 21:52:40,856 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for LINKUSDT.
-2025-01-15 21:52:40,858 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/LINKUSDT_Forecast.csv
-2025-01-15 21:52:40,859 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for DOTUSDT from artifacts/Processed_DFs/DOTUSDT_Featured.csv
-2025-01-15 21:52:40,873 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for DOTUSDT.
-2025-01-15 21:52:40,878 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for DOTUSDT.
-2025-01-15 21:52:42,455 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for DOTUSDT.
-2025-01-15 21:52:42,463 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for DOTUSDT.
-2025-01-15 21:52:42,465 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/DOTUSDT_Forecast.csv
-2025-01-15 21:52:42,465 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for LTCUSDT from artifacts/Processed_DFs/LTCUSDT_Featured.csv
-2025-01-15 21:52:42,477 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for LTCUSDT.
-2025-01-15 21:52:42,481 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for LTCUSDT.
-2025-01-15 21:52:44,402 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for LTCUSDT.
-2025-01-15 21:52:44,410 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for LTCUSDT.
-2025-01-15 21:52:44,413 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/LTCUSDT_Forecast.csv
-2025-01-15 21:52:44,413 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for XRPUSDT from artifacts/Processed_DFs/XRPUSDT_Featured.csv
-2025-01-15 21:52:44,426 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for XRPUSDT.
-2025-01-15 21:52:44,431 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for XRPUSDT.
-2025-01-15 21:52:45,359 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for XRPUSDT.
-2025-01-15 21:52:45,369 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for XRPUSDT.
-2025-01-15 21:52:45,372 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/XRPUSDT_Forecast.csv
-2025-01-15 21:52:45,372 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for SOLUSDT from artifacts/Processed_DFs/SOLUSDT_Featured.csv
-2025-01-15 21:52:45,386 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for SOLUSDT.
-2025-01-15 21:52:45,391 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for SOLUSDT.
-2025-01-15 21:52:46,702 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for SOLUSDT.
-2025-01-15 21:52:46,710 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for SOLUSDT.
-2025-01-15 21:52:46,713 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/SOLUSDT_Forecast.csv
-2025-01-15 21:52:46,713 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for ADAUSDT from artifacts/Processed_DFs/ADAUSDT_Featured.csv
-2025-01-15 21:52:46,725 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for ADAUSDT.
-2025-01-15 21:52:46,730 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for ADAUSDT.
-2025-01-15 21:52:48,052 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for ADAUSDT.
-2025-01-15 21:52:48,060 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for ADAUSDT.
-2025-01-15 21:52:48,063 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/ADAUSDT_Forecast.csv
-2025-01-15 21:52:48,064 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 03: Model Training 👍 <<<<<<<<<<<<< 
+2025-01-20 18:24:08,786 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 03: Model Training 🫠 <<<<<<<<<<<<< 
+2025-01-20 18:24:08,788 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BTCUSDT from artifacts/Processed_DFs/BTCUSDT_Featured.csv
+2025-01-20 18:24:08,796 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BTCUSDT.
+2025-01-20 18:24:08,802 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BTCUSDT.
+2025-01-20 18:24:09,581 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BTCUSDT.
+2025-01-20 18:24:09,594 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BTCUSDT.
+2025-01-20 18:24:09,597 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BTCUSDT_Forecast.csv
+2025-01-20 18:24:09,598 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for BTCUSDT.
+2025-01-20 18:24:12,273 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for ETHUSDT from artifacts/Processed_DFs/ETHUSDT_Featured.csv
+2025-01-20 18:24:12,313 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for ETHUSDT.
+2025-01-20 18:24:12,322 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for ETHUSDT.
+2025-01-20 18:24:14,031 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for ETHUSDT.
+2025-01-20 18:24:14,039 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for ETHUSDT.
+2025-01-20 18:24:14,043 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/ETHUSDT_Forecast.csv
+2025-01-20 18:24:14,043 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for ETHUSDT.
+2025-01-20 18:24:14,414 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BNBUSDT from artifacts/Processed_DFs/BNBUSDT_Featured.csv
+2025-01-20 18:24:14,462 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BNBUSDT.
+2025-01-20 18:24:14,470 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BNBUSDT.
+2025-01-20 18:24:15,665 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BNBUSDT.
+2025-01-20 18:24:15,674 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BNBUSDT.
+2025-01-20 18:24:15,676 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BNBUSDT_Forecast.csv
+2025-01-20 18:24:15,676 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for BNBUSDT.
+2025-01-20 18:24:16,191 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 03: Model Training 👍 <<<<<<<<<<<<< 
 
 
-2025-01-15 21:52:48,065 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 04: Model Forecasting 🫠 <<<<<<<<<<<<< 
-2025-01-15 21:52:48,065 - stage04_ModelForecasting.py - None - INFO - Reading configuration for Model Forecasting.
-2025-01-15 21:52:48,071 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BTCUSDT.
-2025-01-15 21:52:49,564 - modelforecasting.py - None - INFO - Plotting forecast for BTCUSDT.
-2025-01-15 21:52:50,552 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for ETHUSDT.
-2025-01-15 21:52:50,698 - modelforecasting.py - None - INFO - Plotting forecast for ETHUSDT.
-2025-01-15 21:52:51,202 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BNBUSDT.
-2025-01-15 21:52:51,320 - modelforecasting.py - None - INFO - Plotting forecast for BNBUSDT.
-2025-01-15 21:52:51,733 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for DOGEUSDT.
-2025-01-15 21:52:51,878 - modelforecasting.py - None - INFO - Plotting forecast for DOGEUSDT.
-2025-01-15 21:52:52,368 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for LINKUSDT.
-2025-01-15 21:52:52,501 - modelforecasting.py - None - INFO - Plotting forecast for LINKUSDT.
-2025-01-15 21:52:53,019 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for DOTUSDT.
-2025-01-15 21:52:53,132 - modelforecasting.py - None - INFO - Plotting forecast for DOTUSDT.
-2025-01-15 21:52:53,647 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for LTCUSDT.
-2025-01-15 21:52:53,797 - modelforecasting.py - None - INFO - Plotting forecast for LTCUSDT.
-2025-01-15 21:52:54,344 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for XRPUSDT.
-2025-01-15 21:52:54,444 - modelforecasting.py - None - INFO - Plotting forecast for XRPUSDT.
-2025-01-15 21:52:55,007 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for SOLUSDT.
-2025-01-15 21:52:55,129 - modelforecasting.py - None - INFO - Plotting forecast for SOLUSDT.
-2025-01-15 21:52:55,703 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for ADAUSDT.
-2025-01-15 21:52:55,810 - modelforecasting.py - None - INFO - Plotting forecast for ADAUSDT.
-2025-01-15 21:52:56,400 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 04: Model Forecasting 👍 <<<<<<<<<<<<< 
+2025-01-20 18:24:16,191 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 04: Model Forecasting 🫠 <<<<<<<<<<<<< 
+2025-01-20 18:24:16,191 - stage04_ModelForecasting.py - None - INFO - Reading configuration for Model Forecasting.
+2025-01-20 18:24:16,199 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BTCUSDT.
+2025-01-20 18:24:16,280 - modelforecasting.py - None - INFO - Plotting forecast for BTCUSDT.
+2025-01-20 18:24:16,753 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for ETHUSDT.
+2025-01-20 18:24:16,917 - modelforecasting.py - None - INFO - Plotting forecast for ETHUSDT.
+2025-01-20 18:24:17,486 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BNBUSDT.
+2025-01-20 18:24:17,578 - modelforecasting.py - None - INFO - Plotting forecast for BNBUSDT.
+2025-01-20 18:24:18,155 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 04: Model Forecasting 👍 <<<<<<<<<<<<< 
 
 
-2025-01-15 21:52:56,402 - pipeline.py - None - INFO - Completed the PortfolioOptimizer Pipeline.
-2025-01-15 23:19:48,732 - ForcastingPipeline.py - None - ERROR - Pipeline script failed: /Users/mac/Desktop/Comapny2/CryptoPortfolioAI/.venv/bin/python: can't open file '/Users/mac/Desktop/Comapny2/CryptoPortfolioAI/PortfolioOptimizer/pipeline/pipeline.py': [Errno 2] No such file or directory
-
-2025-01-16 04:36:46,395 - pipeline.py - None - INFO - Starting the PortfolioOptimizer Pipeline.
-2025-01-16 04:36:46,397 - pipeline.py - None - INFO - Reading configuration for the pipeline.
-2025-01-16 04:36:46,399 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 01: Data Ingestion 🫠 <<<<<<<<<<<<< 
-2025-01-16 04:36:46,932 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BTCUSDT
-2025-01-16 04:36:47,337 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ETHUSDT
-2025-01-16 04:36:47,693 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BNBUSDT
-2025-01-16 04:36:48,073 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DOGEUSDT
-2025-01-16 04:36:48,447 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LINKUSDT
-2025-01-16 04:36:48,798 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DOTUSDT
-2025-01-16 04:36:49,164 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LTCUSDT
-2025-01-16 04:36:49,531 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for XRPUSDT
-2025-01-16 04:36:49,900 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for SOLUSDT
-2025-01-16 04:36:50,245 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ADAUSDT
-2025-01-16 04:36:50,246 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 01: Data Ingestion 👍 <<<<<<<<<<<<< 
+2025-01-20 18:24:18,156 - pipeline.py - None - INFO - Completed the PortfolioOptimizer Pipeline.
+2025-01-20 13:46:48,813 - pipeline.py - None - INFO - Starting the PortfolioOptimizer Pipeline.
+2025-01-20 13:46:48,815 - pipeline.py - None - INFO - Reading configuration for the pipeline.
+2025-01-20 13:46:48,818 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 01: Data Ingestion 🫠 <<<<<<<<<<<<< 
+2025-01-20 13:46:49,376 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BTCUSDT
+2025-01-20 13:46:49,905 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ETHUSDT
+2025-01-20 13:46:50,378 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BNBUSDT
+2025-01-20 13:46:50,836 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DOGEUSDT
+2025-01-20 13:46:51,298 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LINKUSDT
+2025-01-20 13:46:51,796 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DOTUSDT
+2025-01-20 13:46:52,260 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LTCUSDT
+2025-01-20 13:46:52,725 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for XRPUSDT
+2025-01-20 13:46:53,189 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for SOLUSDT
+2025-01-20 13:46:53,654 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ADAUSDT
+2025-01-20 13:46:53,655 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 01: Data Ingestion 👍 <<<<<<<<<<<<< 
 
 
-2025-01-16 04:36:50,246 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 02: Data Processing 🫠 <<<<<<<<<<<<< 
-2025-01-16 04:36:51,650 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BTCUSDT_Featured.csv
-2025-01-16 04:36:53,251 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ETHUSDT_Featured.csv
-2025-01-16 04:36:57,664 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BNBUSDT_Featured.csv
-2025-01-16 04:37:02,027 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DOGEUSDT_Featured.csv
-2025-01-16 04:37:06,464 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LINKUSDT_Featured.csv
-2025-01-16 04:37:10,725 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DOTUSDT_Featured.csv
-2025-01-16 04:37:16,036 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LTCUSDT_Featured.csv
-2025-01-16 04:37:21,433 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/XRPUSDT_Featured.csv
-2025-01-16 04:37:25,528 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/SOLUSDT_Featured.csv
-2025-01-16 04:37:29,718 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ADAUSDT_Featured.csv
-2025-01-16 04:37:29,718 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 02: Data Processing 👍 <<<<<<<<<<<<< 
+2025-01-20 13:46:53,655 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 02: Data Processing 🫠 <<<<<<<<<<<<< 
+2025-01-20 13:46:54,910 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BTCUSDT_Featured.csv
+2025-01-20 13:46:56,224 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ETHUSDT_Featured.csv
+2025-01-20 13:47:00,596 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BNBUSDT_Featured.csv
+2025-01-20 13:47:04,250 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DOGEUSDT_Featured.csv
+2025-01-20 13:47:08,440 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LINKUSDT_Featured.csv
+2025-01-20 13:47:12,764 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DOTUSDT_Featured.csv
+2025-01-20 13:47:23,154 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LTCUSDT_Featured.csv
+2025-01-20 13:47:32,869 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/XRPUSDT_Featured.csv
+2025-01-20 13:47:37,516 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/SOLUSDT_Featured.csv
+2025-01-20 13:47:41,658 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ADAUSDT_Featured.csv
+2025-01-20 13:47:41,661 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 02: Data Processing 👍 <<<<<<<<<<<<< 
 
 
-2025-01-16 04:37:29,718 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 03: Model Training 🫠 <<<<<<<<<<<<< 
-2025-01-16 04:37:29,722 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BTCUSDT from artifacts/Processed_DFs/BTCUSDT_Featured.csv
-2025-01-16 04:37:29,731 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BTCUSDT.
-2025-01-16 04:37:29,734 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BTCUSDT.
-2025-01-16 04:37:30,243 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BTCUSDT.
-2025-01-16 04:37:30,261 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BTCUSDT.
-2025-01-16 04:37:30,275 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BTCUSDT_Forecast.csv
-2025-01-16 04:37:30,280 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for ETHUSDT from artifacts/Processed_DFs/ETHUSDT_Featured.csv
-2025-01-16 04:37:30,288 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for ETHUSDT.
-2025-01-16 04:37:30,293 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for ETHUSDT.
-2025-01-16 04:37:30,774 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for ETHUSDT.
-2025-01-16 04:37:30,784 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for ETHUSDT.
-2025-01-16 04:37:30,793 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/ETHUSDT_Forecast.csv
-2025-01-16 04:37:30,794 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BNBUSDT from artifacts/Processed_DFs/BNBUSDT_Featured.csv
-2025-01-16 04:37:30,803 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BNBUSDT.
-2025-01-16 04:37:30,809 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BNBUSDT.
-2025-01-16 04:37:31,267 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BNBUSDT.
-2025-01-16 04:37:31,284 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BNBUSDT.
-2025-01-16 04:37:31,297 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BNBUSDT_Forecast.csv
-2025-01-16 04:37:31,299 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for DOGEUSDT from artifacts/Processed_DFs/DOGEUSDT_Featured.csv
-2025-01-16 04:37:31,311 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for DOGEUSDT.
-2025-01-16 04:37:31,316 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for DOGEUSDT.
-2025-01-16 04:37:31,784 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for DOGEUSDT.
-2025-01-16 04:37:31,796 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for DOGEUSDT.
-2025-01-16 04:37:31,803 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/DOGEUSDT_Forecast.csv
-2025-01-16 04:37:31,806 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for LINKUSDT from artifacts/Processed_DFs/LINKUSDT_Featured.csv
-2025-01-16 04:37:31,819 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for LINKUSDT.
-2025-01-16 04:37:31,824 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for LINKUSDT.
-2025-01-16 04:37:32,260 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for LINKUSDT.
-2025-01-16 04:37:32,269 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for LINKUSDT.
-2025-01-16 04:37:32,295 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/LINKUSDT_Forecast.csv
-2025-01-16 04:37:32,297 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for DOTUSDT from artifacts/Processed_DFs/DOTUSDT_Featured.csv
-2025-01-16 04:37:32,307 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for DOTUSDT.
-2025-01-16 04:37:32,313 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for DOTUSDT.
-2025-01-16 04:37:32,817 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for DOTUSDT.
-2025-01-16 04:37:32,827 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for DOTUSDT.
-2025-01-16 04:37:32,831 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/DOTUSDT_Forecast.csv
-2025-01-16 04:37:32,832 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for LTCUSDT from artifacts/Processed_DFs/LTCUSDT_Featured.csv
-2025-01-16 04:37:32,842 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for LTCUSDT.
-2025-01-16 04:37:32,847 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for LTCUSDT.
-2025-01-16 04:37:33,428 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for LTCUSDT.
-2025-01-16 04:37:33,441 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for LTCUSDT.
-2025-01-16 04:37:33,452 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/LTCUSDT_Forecast.csv
-2025-01-16 04:37:33,453 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for XRPUSDT from artifacts/Processed_DFs/XRPUSDT_Featured.csv
-2025-01-16 04:37:33,465 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for XRPUSDT.
-2025-01-16 04:37:33,468 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for XRPUSDT.
-2025-01-16 04:37:33,995 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for XRPUSDT.
-2025-01-16 04:37:34,007 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for XRPUSDT.
-2025-01-16 04:37:34,017 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/XRPUSDT_Forecast.csv
-2025-01-16 04:37:34,018 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for SOLUSDT from artifacts/Processed_DFs/SOLUSDT_Featured.csv
-2025-01-16 04:37:34,030 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for SOLUSDT.
-2025-01-16 04:37:34,034 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for SOLUSDT.
-2025-01-16 04:37:34,599 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for SOLUSDT.
-2025-01-16 04:37:34,607 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for SOLUSDT.
-2025-01-16 04:37:34,618 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/SOLUSDT_Forecast.csv
-2025-01-16 04:37:34,619 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for ADAUSDT from artifacts/Processed_DFs/ADAUSDT_Featured.csv
-2025-01-16 04:37:34,630 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for ADAUSDT.
-2025-01-16 04:37:34,634 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for ADAUSDT.
-2025-01-16 04:37:35,117 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for ADAUSDT.
-2025-01-16 04:37:35,128 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for ADAUSDT.
-2025-01-16 04:37:35,137 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/ADAUSDT_Forecast.csv
-2025-01-16 04:37:35,139 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 03: Model Training 👍 <<<<<<<<<<<<< 
+2025-01-20 13:47:41,661 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 03: Model Training 🫠 <<<<<<<<<<<<< 
+2025-01-20 13:47:41,665 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BTCUSDT from artifacts/Processed_DFs/BTCUSDT_Featured.csv
+2025-01-20 13:47:41,696 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BTCUSDT.
+2025-01-20 13:47:41,701 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BTCUSDT.
+2025-01-20 13:47:42,359 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BTCUSDT.
+2025-01-20 13:47:42,375 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BTCUSDT.
+2025-01-20 13:47:42,388 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BTCUSDT_Forecast.csv
+2025-01-20 13:47:42,388 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for BTCUSDT.
+2025-01-20 13:47:42,908 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for ETHUSDT from artifacts/Processed_DFs/ETHUSDT_Featured.csv
+2025-01-20 13:47:42,918 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for ETHUSDT.
+2025-01-20 13:47:42,921 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for ETHUSDT.
+2025-01-20 13:47:43,445 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for ETHUSDT.
+2025-01-20 13:47:43,454 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for ETHUSDT.
+2025-01-20 13:47:43,462 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/ETHUSDT_Forecast.csv
+2025-01-20 13:47:43,462 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for ETHUSDT.
+2025-01-20 13:47:43,494 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BNBUSDT from artifacts/Processed_DFs/BNBUSDT_Featured.csv
+2025-01-20 13:47:43,504 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BNBUSDT.
+2025-01-20 13:47:43,509 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BNBUSDT.
+2025-01-20 13:47:44,094 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BNBUSDT.
+2025-01-20 13:47:44,104 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BNBUSDT.
+2025-01-20 13:47:44,114 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BNBUSDT_Forecast.csv
+2025-01-20 13:47:44,115 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for BNBUSDT.
+2025-01-20 13:47:44,148 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for DOGEUSDT from artifacts/Processed_DFs/DOGEUSDT_Featured.csv
+2025-01-20 13:47:44,159 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for DOGEUSDT.
+2025-01-20 13:47:44,163 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for DOGEUSDT.
+2025-01-20 13:47:44,607 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for DOGEUSDT.
+2025-01-20 13:47:44,617 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for DOGEUSDT.
+2025-01-20 13:47:44,627 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/DOGEUSDT_Forecast.csv
+2025-01-20 13:47:44,628 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for DOGEUSDT.
+2025-01-20 13:47:44,661 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for LINKUSDT from artifacts/Processed_DFs/LINKUSDT_Featured.csv
+2025-01-20 13:47:44,670 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for LINKUSDT.
+2025-01-20 13:47:44,697 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for LINKUSDT.
+2025-01-20 13:47:45,278 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for LINKUSDT.
+2025-01-20 13:47:45,287 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for LINKUSDT.
+2025-01-20 13:47:45,291 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/LINKUSDT_Forecast.csv
+2025-01-20 13:47:45,292 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for LINKUSDT.
+2025-01-20 13:47:45,322 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for DOTUSDT from artifacts/Processed_DFs/DOTUSDT_Featured.csv
+2025-01-20 13:47:45,330 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for DOTUSDT.
+2025-01-20 13:47:45,334 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for DOTUSDT.
+2025-01-20 13:47:45,848 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for DOTUSDT.
+2025-01-20 13:47:45,860 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for DOTUSDT.
+2025-01-20 13:47:45,868 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/DOTUSDT_Forecast.csv
+2025-01-20 13:47:45,868 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for DOTUSDT.
+2025-01-20 13:47:45,900 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for LTCUSDT from artifacts/Processed_DFs/LTCUSDT_Featured.csv
+2025-01-20 13:47:45,909 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for LTCUSDT.
+2025-01-20 13:47:45,913 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for LTCUSDT.
+2025-01-20 13:47:46,476 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for LTCUSDT.
+2025-01-20 13:47:46,517 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for LTCUSDT.
+2025-01-20 13:47:46,523 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/LTCUSDT_Forecast.csv
+2025-01-20 13:47:46,523 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for LTCUSDT.
+2025-01-20 13:47:46,552 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for XRPUSDT from artifacts/Processed_DFs/XRPUSDT_Featured.csv
+2025-01-20 13:47:46,561 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for XRPUSDT.
+2025-01-20 13:47:46,565 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for XRPUSDT.
+2025-01-20 13:47:47,232 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for XRPUSDT.
+2025-01-20 13:47:47,243 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for XRPUSDT.
+2025-01-20 13:47:47,250 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/XRPUSDT_Forecast.csv
+2025-01-20 13:47:47,251 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for XRPUSDT.
+2025-01-20 13:47:47,284 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for SOLUSDT from artifacts/Processed_DFs/SOLUSDT_Featured.csv
+2025-01-20 13:47:47,292 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for SOLUSDT.
+2025-01-20 13:47:47,295 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for SOLUSDT.
+2025-01-20 13:47:47,848 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for SOLUSDT.
+2025-01-20 13:47:47,862 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for SOLUSDT.
+2025-01-20 13:47:47,867 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/SOLUSDT_Forecast.csv
+2025-01-20 13:47:47,868 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for SOLUSDT.
+2025-01-20 13:47:47,899 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for ADAUSDT from artifacts/Processed_DFs/ADAUSDT_Featured.csv
+2025-01-20 13:47:47,911 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for ADAUSDT.
+2025-01-20 13:47:47,917 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for ADAUSDT.
+2025-01-20 13:47:49,272 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for ADAUSDT.
+2025-01-20 13:47:49,283 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for ADAUSDT.
+2025-01-20 13:47:49,289 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/ADAUSDT_Forecast.csv
+2025-01-20 13:47:49,290 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for ADAUSDT.
+2025-01-20 13:47:49,326 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 03: Model Training 👍 <<<<<<<<<<<<< 
 
 
-2025-01-16 04:37:35,139 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 04: Model Forecasting 🫠 <<<<<<<<<<<<< 
-2025-01-16 04:37:35,140 - stage04_ModelForecasting.py - None - INFO - Reading configuration for Model Forecasting.
-2025-01-16 04:37:35,149 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BTCUSDT.
-2025-01-16 04:37:35,414 - modelforecasting.py - None - INFO - Plotting forecast for BTCUSDT.
-2025-01-16 04:37:35,445 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for ETHUSDT.
-2025-01-16 04:37:35,483 - modelforecasting.py - None - INFO - Plotting forecast for ETHUSDT.
-2025-01-16 04:37:35,485 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BNBUSDT.
-2025-01-16 04:37:35,528 - modelforecasting.py - None - INFO - Plotting forecast for BNBUSDT.
-2025-01-16 04:37:35,531 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for DOGEUSDT.
-2025-01-16 04:37:35,563 - modelforecasting.py - None - INFO - Plotting forecast for DOGEUSDT.
-2025-01-16 04:37:35,566 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for LINKUSDT.
-2025-01-16 04:37:35,603 - modelforecasting.py - None - INFO - Plotting forecast for LINKUSDT.
-2025-01-16 04:37:35,605 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for DOTUSDT.
-2025-01-16 04:37:35,639 - modelforecasting.py - None - INFO - Plotting forecast for DOTUSDT.
-2025-01-16 04:37:35,642 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for LTCUSDT.
-2025-01-16 04:37:35,676 - modelforecasting.py - None - INFO - Plotting forecast for LTCUSDT.
-2025-01-16 04:37:35,680 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for XRPUSDT.
-2025-01-16 04:37:35,716 - modelforecasting.py - None - INFO - Plotting forecast for XRPUSDT.
-2025-01-16 04:37:35,719 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for SOLUSDT.
-2025-01-16 04:37:35,751 - modelforecasting.py - None - INFO - Plotting forecast for SOLUSDT.
-2025-01-16 04:37:35,754 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for ADAUSDT.
-2025-01-16 04:37:35,792 - modelforecasting.py - None - INFO - Plotting forecast for ADAUSDT.
-2025-01-16 04:37:35,796 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 04: Model Forecasting 👍 <<<<<<<<<<<<< 
+2025-01-20 13:47:49,327 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 04: Model Forecasting 🫠 <<<<<<<<<<<<< 
+2025-01-20 13:47:49,327 - stage04_ModelForecasting.py - None - INFO - Reading configuration for Model Forecasting.
+2025-01-20 13:47:49,335 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BTCUSDT.
+2025-01-20 13:47:49,381 - modelforecasting.py - None - INFO - Plotting forecast for BTCUSDT.
+2025-01-20 13:47:49,385 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for ETHUSDT.
+2025-01-20 13:47:49,422 - modelforecasting.py - None - INFO - Plotting forecast for ETHUSDT.
+2025-01-20 13:47:49,426 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BNBUSDT.
+2025-01-20 13:47:49,464 - modelforecasting.py - None - INFO - Plotting forecast for BNBUSDT.
+2025-01-20 13:47:49,466 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for DOGEUSDT.
+2025-01-20 13:47:49,502 - modelforecasting.py - None - INFO - Plotting forecast for DOGEUSDT.
+2025-01-20 13:47:49,505 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for LINKUSDT.
+2025-01-20 13:47:49,542 - modelforecasting.py - None - INFO - Plotting forecast for LINKUSDT.
+2025-01-20 13:47:49,544 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for DOTUSDT.
+2025-01-20 13:47:49,581 - modelforecasting.py - None - INFO - Plotting forecast for DOTUSDT.
+2025-01-20 13:47:49,583 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for LTCUSDT.
+2025-01-20 13:47:49,619 - modelforecasting.py - None - INFO - Plotting forecast for LTCUSDT.
+2025-01-20 13:47:49,622 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for XRPUSDT.
+2025-01-20 13:47:49,659 - modelforecasting.py - None - INFO - Plotting forecast for XRPUSDT.
+2025-01-20 13:47:49,661 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for SOLUSDT.
+2025-01-20 13:47:49,697 - modelforecasting.py - None - INFO - Plotting forecast for SOLUSDT.
+2025-01-20 13:47:49,700 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for ADAUSDT.
+2025-01-20 13:47:49,736 - modelforecasting.py - None - INFO - Plotting forecast for ADAUSDT.
+2025-01-20 13:47:49,739 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 04: Model Forecasting 👍 <<<<<<<<<<<<< 
 
 
-2025-01-16 04:37:35,796 - pipeline.py - None - INFO - Completed the PortfolioOptimizer Pipeline.
-2025-01-16 06:25:59,634 - pipeline.py - None - INFO - Starting the PortfolioOptimizer Pipeline.
-2025-01-16 06:25:59,635 - pipeline.py - None - INFO - Reading configuration for the pipeline.
-2025-01-16 06:25:59,638 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 01: Data Ingestion 🫠 <<<<<<<<<<<<< 
-2025-01-16 06:26:00,063 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BTCUSDT
-2025-01-16 06:26:00,441 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ETHUSDT
-2025-01-16 06:26:00,799 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BNBUSDT
-2025-01-16 06:26:01,141 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DOGEUSDT
-2025-01-16 06:26:01,491 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LINKUSDT
-2025-01-16 06:26:01,839 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DOTUSDT
-2025-01-16 06:26:02,199 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LTCUSDT
-2025-01-16 06:26:02,554 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for XRPUSDT
-2025-01-16 06:26:02,922 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for SOLUSDT
-2025-01-16 06:26:03,320 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ADAUSDT
-2025-01-16 06:26:03,329 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 01: Data Ingestion 👍 <<<<<<<<<<<<< 
+2025-01-20 13:47:49,739 - pipeline.py - None - INFO - Completed the PortfolioOptimizer Pipeline.
+2025-01-20 14:02:09,919 - pipeline.py - None - INFO - Starting the PortfolioOptimizer Pipeline.
+2025-01-20 14:02:09,921 - pipeline.py - None - INFO - Reading configuration for the pipeline.
+2025-01-20 14:02:09,924 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 01: Data Ingestion 🫠 <<<<<<<<<<<<< 
+2025-01-20 14:02:10,477 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BTCUSDT
+2025-01-20 14:02:11,018 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ETHUSDT
+2025-01-20 14:02:11,474 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BNBUSDT
+2025-01-20 14:02:11,940 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DOGEUSDT
+2025-01-20 14:02:12,408 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LINKUSDT
+2025-01-20 14:02:12,883 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DOTUSDT
+2025-01-20 14:02:13,417 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LTCUSDT
+2025-01-20 14:02:13,883 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for XRPUSDT
+2025-01-20 14:02:14,374 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for SOLUSDT
+2025-01-20 14:02:14,837 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ADAUSDT
+2025-01-20 14:02:14,838 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 01: Data Ingestion 👍 <<<<<<<<<<<<< 
 
 
-2025-01-16 06:26:03,330 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 02: Data Processing 🫠 <<<<<<<<<<<<< 
-2025-01-16 06:26:05,660 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BTCUSDT_Featured.csv
-2025-01-16 06:26:07,539 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ETHUSDT_Featured.csv
-2025-01-16 06:26:11,923 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BNBUSDT_Featured.csv
-2025-01-16 06:26:16,657 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DOGEUSDT_Featured.csv
-2025-01-16 06:26:21,357 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LINKUSDT_Featured.csv
-2025-01-16 06:26:26,901 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DOTUSDT_Featured.csv
-2025-01-16 06:26:32,450 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LTCUSDT_Featured.csv
-2025-01-16 06:26:38,043 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/XRPUSDT_Featured.csv
-2025-01-16 06:26:43,332 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/SOLUSDT_Featured.csv
-2025-01-16 06:26:47,715 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ADAUSDT_Featured.csv
-2025-01-16 06:26:47,716 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 02: Data Processing 👍 <<<<<<<<<<<<< 
+2025-01-20 14:02:14,839 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 02: Data Processing 🫠 <<<<<<<<<<<<< 
+2025-01-20 14:02:16,415 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BTCUSDT_Featured.csv
+2025-01-20 14:02:17,883 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ETHUSDT_Featured.csv
+2025-01-20 14:02:21,975 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BNBUSDT_Featured.csv
+2025-01-20 14:02:25,796 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DOGEUSDT_Featured.csv
+2025-01-20 14:02:29,797 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LINKUSDT_Featured.csv
+2025-01-20 14:02:33,780 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DOTUSDT_Featured.csv
+2025-01-20 14:02:38,113 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LTCUSDT_Featured.csv
+2025-01-20 14:02:41,892 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/XRPUSDT_Featured.csv
+2025-01-20 14:02:45,815 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/SOLUSDT_Featured.csv
+2025-01-20 14:02:49,854 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ADAUSDT_Featured.csv
+2025-01-20 14:02:49,855 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 02: Data Processing 👍 <<<<<<<<<<<<< 
 
 
-2025-01-16 06:26:47,716 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 03: Model Training 🫠 <<<<<<<<<<<<< 
-2025-01-16 06:26:47,722 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BTCUSDT from artifacts/Processed_DFs/BTCUSDT_Featured.csv
-2025-01-16 06:26:47,737 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BTCUSDT.
-2025-01-16 06:26:47,748 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BTCUSDT.
-2025-01-16 06:26:48,508 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BTCUSDT.
-2025-01-16 06:26:48,520 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BTCUSDT.
-2025-01-16 06:26:48,524 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BTCUSDT_Forecast.csv
-2025-01-16 06:26:48,526 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for ETHUSDT from artifacts/Processed_DFs/ETHUSDT_Featured.csv
-2025-01-16 06:26:48,537 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for ETHUSDT.
-2025-01-16 06:26:48,541 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for ETHUSDT.
-2025-01-16 06:26:49,180 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for ETHUSDT.
-2025-01-16 06:26:49,193 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for ETHUSDT.
-2025-01-16 06:26:49,203 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/ETHUSDT_Forecast.csv
-2025-01-16 06:26:49,207 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BNBUSDT from artifacts/Processed_DFs/BNBUSDT_Featured.csv
-2025-01-16 06:26:49,221 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BNBUSDT.
-2025-01-16 06:26:49,226 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BNBUSDT.
-2025-01-16 06:26:49,846 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BNBUSDT.
-2025-01-16 06:26:49,856 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BNBUSDT.
-2025-01-16 06:26:49,864 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BNBUSDT_Forecast.csv
-2025-01-16 06:26:49,865 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for DOGEUSDT from artifacts/Processed_DFs/DOGEUSDT_Featured.csv
-2025-01-16 06:26:49,880 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for DOGEUSDT.
-2025-01-16 06:26:49,890 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for DOGEUSDT.
-2025-01-16 06:26:50,610 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for DOGEUSDT.
-2025-01-16 06:26:50,620 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for DOGEUSDT.
-2025-01-16 06:26:50,629 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/DOGEUSDT_Forecast.csv
-2025-01-16 06:26:50,630 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for LINKUSDT from artifacts/Processed_DFs/LINKUSDT_Featured.csv
-2025-01-16 06:26:50,641 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for LINKUSDT.
-2025-01-16 06:26:50,645 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for LINKUSDT.
-2025-01-16 06:26:51,298 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for LINKUSDT.
-2025-01-16 06:26:51,313 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for LINKUSDT.
-2025-01-16 06:26:51,319 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/LINKUSDT_Forecast.csv
-2025-01-16 06:26:51,320 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for DOTUSDT from artifacts/Processed_DFs/DOTUSDT_Featured.csv
-2025-01-16 06:26:51,336 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for DOTUSDT.
-2025-01-16 06:26:51,341 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for DOTUSDT.
-2025-01-16 06:26:51,855 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for DOTUSDT.
-2025-01-16 06:26:51,865 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for DOTUSDT.
-2025-01-16 06:26:51,869 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/DOTUSDT_Forecast.csv
-2025-01-16 06:26:51,871 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for LTCUSDT from artifacts/Processed_DFs/LTCUSDT_Featured.csv
-2025-01-16 06:26:51,886 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for LTCUSDT.
-2025-01-16 06:26:51,893 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for LTCUSDT.
-2025-01-16 06:26:52,432 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for LTCUSDT.
-2025-01-16 06:26:52,443 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for LTCUSDT.
-2025-01-16 06:26:52,449 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/LTCUSDT_Forecast.csv
-2025-01-16 06:26:52,451 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for XRPUSDT from artifacts/Processed_DFs/XRPUSDT_Featured.csv
-2025-01-16 06:26:52,461 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for XRPUSDT.
-2025-01-16 06:26:52,465 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for XRPUSDT.
-2025-01-16 06:26:52,881 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for XRPUSDT.
-2025-01-16 06:26:52,895 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for XRPUSDT.
-2025-01-16 06:26:52,902 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/XRPUSDT_Forecast.csv
-2025-01-16 06:26:52,903 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for SOLUSDT from artifacts/Processed_DFs/SOLUSDT_Featured.csv
-2025-01-16 06:26:52,914 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for SOLUSDT.
-2025-01-16 06:26:52,921 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for SOLUSDT.
-2025-01-16 06:26:53,402 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for SOLUSDT.
-2025-01-16 06:26:53,413 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for SOLUSDT.
-2025-01-16 06:26:53,424 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/SOLUSDT_Forecast.csv
-2025-01-16 06:26:53,429 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for ADAUSDT from artifacts/Processed_DFs/ADAUSDT_Featured.csv
-2025-01-16 06:26:53,442 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for ADAUSDT.
-2025-01-16 06:26:53,451 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for ADAUSDT.
-2025-01-16 06:26:54,015 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for ADAUSDT.
-2025-01-16 06:26:54,026 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for ADAUSDT.
-2025-01-16 06:26:54,030 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/ADAUSDT_Forecast.csv
-2025-01-16 06:26:54,032 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 03: Model Training 👍 <<<<<<<<<<<<< 
+2025-01-20 14:02:49,855 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 03: Model Training 🫠 <<<<<<<<<<<<< 
+2025-01-20 14:02:49,859 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BTCUSDT from artifacts/Processed_DFs/BTCUSDT_Featured.csv
+2025-01-20 14:02:49,868 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BTCUSDT.
+2025-01-20 14:02:49,872 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BTCUSDT.
+2025-01-20 14:02:50,409 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BTCUSDT.
+2025-01-20 14:02:50,434 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BTCUSDT.
+2025-01-20 14:02:50,449 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BTCUSDT_Forecast.csv
+2025-01-20 14:02:50,450 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for BTCUSDT.
+2025-01-20 14:02:50,692 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for ETHUSDT from artifacts/Processed_DFs/ETHUSDT_Featured.csv
+2025-01-20 14:02:50,766 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for ETHUSDT.
+2025-01-20 14:02:50,771 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for ETHUSDT.
+2025-01-20 14:02:51,301 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for ETHUSDT.
+2025-01-20 14:02:51,310 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for ETHUSDT.
+2025-01-20 14:02:51,316 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/ETHUSDT_Forecast.csv
+2025-01-20 14:02:51,316 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for ETHUSDT.
+2025-01-20 14:02:51,347 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BNBUSDT from artifacts/Processed_DFs/BNBUSDT_Featured.csv
+2025-01-20 14:02:51,357 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BNBUSDT.
+2025-01-20 14:02:51,361 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BNBUSDT.
+2025-01-20 14:02:52,141 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BNBUSDT.
+2025-01-20 14:02:52,152 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BNBUSDT.
+2025-01-20 14:02:52,157 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BNBUSDT_Forecast.csv
+2025-01-20 14:02:52,157 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for BNBUSDT.
+2025-01-20 14:02:52,192 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for DOGEUSDT from artifacts/Processed_DFs/DOGEUSDT_Featured.csv
+2025-01-20 14:02:52,201 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for DOGEUSDT.
+2025-01-20 14:02:52,206 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for DOGEUSDT.
+2025-01-20 14:02:52,937 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for DOGEUSDT.
+2025-01-20 14:02:52,951 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for DOGEUSDT.
+2025-01-20 14:02:52,954 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/DOGEUSDT_Forecast.csv
+2025-01-20 14:02:52,955 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for DOGEUSDT.
+2025-01-20 14:02:52,989 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for LINKUSDT from artifacts/Processed_DFs/LINKUSDT_Featured.csv
+2025-01-20 14:02:52,998 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for LINKUSDT.
+2025-01-20 14:02:53,002 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for LINKUSDT.
+2025-01-20 14:02:53,456 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for LINKUSDT.
+2025-01-20 14:02:53,464 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for LINKUSDT.
+2025-01-20 14:02:53,482 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/LINKUSDT_Forecast.csv
+2025-01-20 14:02:53,485 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for LINKUSDT.
+2025-01-20 14:02:53,512 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for DOTUSDT from artifacts/Processed_DFs/DOTUSDT_Featured.csv
+2025-01-20 14:02:53,522 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for DOTUSDT.
+2025-01-20 14:02:53,526 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for DOTUSDT.
+2025-01-20 14:02:54,277 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for DOTUSDT.
+2025-01-20 14:02:54,291 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for DOTUSDT.
+2025-01-20 14:02:54,294 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/DOTUSDT_Forecast.csv
+2025-01-20 14:02:54,295 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for DOTUSDT.
+2025-01-20 14:02:54,330 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for LTCUSDT from artifacts/Processed_DFs/LTCUSDT_Featured.csv
+2025-01-20 14:02:54,340 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for LTCUSDT.
+2025-01-20 14:02:54,344 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for LTCUSDT.
+2025-01-20 14:02:55,130 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for LTCUSDT.
+2025-01-20 14:02:55,142 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for LTCUSDT.
+2025-01-20 14:02:55,152 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/LTCUSDT_Forecast.csv
+2025-01-20 14:02:55,153 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for LTCUSDT.
+2025-01-20 14:02:55,186 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for XRPUSDT from artifacts/Processed_DFs/XRPUSDT_Featured.csv
+2025-01-20 14:02:55,197 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for XRPUSDT.
+2025-01-20 14:02:55,200 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for XRPUSDT.
+2025-01-20 14:02:55,823 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for XRPUSDT.
+2025-01-20 14:02:55,835 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for XRPUSDT.
+2025-01-20 14:02:55,842 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/XRPUSDT_Forecast.csv
+2025-01-20 14:02:55,842 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for XRPUSDT.
+2025-01-20 14:02:55,892 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for SOLUSDT from artifacts/Processed_DFs/SOLUSDT_Featured.csv
+2025-01-20 14:02:55,899 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for SOLUSDT.
+2025-01-20 14:02:55,903 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for SOLUSDT.
+2025-01-20 14:02:56,286 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for SOLUSDT.
+2025-01-20 14:02:56,295 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for SOLUSDT.
+2025-01-20 14:02:56,300 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/SOLUSDT_Forecast.csv
+2025-01-20 14:02:56,301 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for SOLUSDT.
+2025-01-20 14:02:56,330 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for ADAUSDT from artifacts/Processed_DFs/ADAUSDT_Featured.csv
+2025-01-20 14:02:56,338 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for ADAUSDT.
+2025-01-20 14:02:56,342 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for ADAUSDT.
+2025-01-20 14:02:56,826 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for ADAUSDT.
+2025-01-20 14:02:56,838 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for ADAUSDT.
+2025-01-20 14:02:56,846 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/ADAUSDT_Forecast.csv
+2025-01-20 14:02:56,846 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for ADAUSDT.
+2025-01-20 14:02:56,892 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 03: Model Training 👍 <<<<<<<<<<<<< 
 
 
-2025-01-16 06:26:54,033 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 04: Model Forecasting 🫠 <<<<<<<<<<<<< 
-2025-01-16 06:26:54,033 - stage04_ModelForecasting.py - None - INFO - Reading configuration for Model Forecasting.
-2025-01-16 06:26:54,042 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BTCUSDT.
-2025-01-16 06:26:54,945 - modelforecasting.py - None - INFO - Plotting forecast for BTCUSDT.
-2025-01-16 06:26:54,978 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for ETHUSDT.
-2025-01-16 06:26:55,012 - modelforecasting.py - None - INFO - Plotting forecast for ETHUSDT.
-2025-01-16 06:26:55,016 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BNBUSDT.
-2025-01-16 06:26:55,055 - modelforecasting.py - None - INFO - Plotting forecast for BNBUSDT.
-2025-01-16 06:26:55,058 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for DOGEUSDT.
-2025-01-16 06:26:55,100 - modelforecasting.py - None - INFO - Plotting forecast for DOGEUSDT.
-2025-01-16 06:26:55,103 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for LINKUSDT.
-2025-01-16 06:26:55,141 - modelforecasting.py - None - INFO - Plotting forecast for LINKUSDT.
-2025-01-16 06:26:55,144 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for DOTUSDT.
-2025-01-16 06:26:55,178 - modelforecasting.py - None - INFO - Plotting forecast for DOTUSDT.
-2025-01-16 06:26:55,181 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for LTCUSDT.
-2025-01-16 06:26:55,214 - modelforecasting.py - None - INFO - Plotting forecast for LTCUSDT.
-2025-01-16 06:26:55,217 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for XRPUSDT.
-2025-01-16 06:26:55,255 - modelforecasting.py - None - INFO - Plotting forecast for XRPUSDT.
-2025-01-16 06:26:55,258 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for SOLUSDT.
-2025-01-16 06:26:55,291 - modelforecasting.py - None - INFO - Plotting forecast for SOLUSDT.
-2025-01-16 06:26:55,294 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for ADAUSDT.
-2025-01-16 06:26:55,337 - modelforecasting.py - None - INFO - Plotting forecast for ADAUSDT.
-2025-01-16 06:26:55,340 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 04: Model Forecasting 👍 <<<<<<<<<<<<< 
+2025-01-20 14:02:56,893 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 04: Model Forecasting 🫠 <<<<<<<<<<<<< 
+2025-01-20 14:02:56,893 - stage04_ModelForecasting.py - None - INFO - Reading configuration for Model Forecasting.
+2025-01-20 14:02:56,899 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BTCUSDT.
+2025-01-20 14:02:56,944 - modelforecasting.py - None - INFO - Plotting forecast for BTCUSDT.
+2025-01-20 14:02:56,947 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for ETHUSDT.
+2025-01-20 14:02:56,986 - modelforecasting.py - None - INFO - Plotting forecast for ETHUSDT.
+2025-01-20 14:02:56,989 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BNBUSDT.
+2025-01-20 14:02:57,029 - modelforecasting.py - None - INFO - Plotting forecast for BNBUSDT.
+2025-01-20 14:02:57,031 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for DOGEUSDT.
+2025-01-20 14:02:57,065 - modelforecasting.py - None - INFO - Plotting forecast for DOGEUSDT.
+2025-01-20 14:02:57,067 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for LINKUSDT.
+2025-01-20 14:02:57,102 - modelforecasting.py - None - INFO - Plotting forecast for LINKUSDT.
+2025-01-20 14:02:57,105 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for DOTUSDT.
+2025-01-20 14:02:57,144 - modelforecasting.py - None - INFO - Plotting forecast for DOTUSDT.
+2025-01-20 14:02:57,146 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for LTCUSDT.
+2025-01-20 14:02:57,184 - modelforecasting.py - None - INFO - Plotting forecast for LTCUSDT.
+2025-01-20 14:02:57,186 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for XRPUSDT.
+2025-01-20 14:02:57,221 - modelforecasting.py - None - INFO - Plotting forecast for XRPUSDT.
+2025-01-20 14:02:57,224 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for SOLUSDT.
+2025-01-20 14:02:57,257 - modelforecasting.py - None - INFO - Plotting forecast for SOLUSDT.
+2025-01-20 14:02:57,259 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for ADAUSDT.
+2025-01-20 14:02:57,294 - modelforecasting.py - None - INFO - Plotting forecast for ADAUSDT.
+2025-01-20 14:02:57,296 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 04: Model Forecasting 👍 <<<<<<<<<<<<< 
 
 
-2025-01-16 06:26:55,341 - pipeline.py - None - INFO - Completed the PortfolioOptimizer Pipeline.
+2025-01-20 14:02:57,297 - pipeline.py - None - INFO - Completed the PortfolioOptimizer Pipeline.
