@@ -1,8 +1,7 @@
-import os
-import uvicorn
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from routes import currencies_plots, seaborn_plots
+import uvicorn
+from routes import currencies_plots 
 
 app = FastAPI(
     title="Currency Forecast API",
@@ -13,7 +12,6 @@ app = FastAPI(
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 app.include_router(currencies_plots.router)
-app.include_router(seaborn_plots.router)
 
 @app.get("/")
 async def root():
@@ -25,5 +23,4 @@ async def root():
     }
 
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 8000)) 
-    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
