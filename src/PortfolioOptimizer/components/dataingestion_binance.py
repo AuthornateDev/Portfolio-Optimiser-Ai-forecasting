@@ -1,6 +1,7 @@
 import pandas as pd
 import requests
 import datetime
+import time
 
 class BinanceIngestionData:
     def __init__(self, symbol, interval, start_date, end_date, output_dir):
@@ -10,6 +11,8 @@ class BinanceIngestionData:
         self.end_date = end_date
         self.output_dir = output_dir
         self.base_url = "https://api.binance.com/api/v3/klines"
+        self.max_retries = 5  # Maximum number of retries
+        self.retry_delay = 5  # Delay between retries in seconds
 
     def fetch_data(self):
         params = {
@@ -19,13 +22,24 @@ class BinanceIngestionData:
             "endTime": int(datetime.datetime.strptime(self.end_date, "%Y-%m-%d").timestamp() * 1000),
             "limit": 1000
         }
-        response = requests.get(self.base_url, params=params)
-        data = response.json()
 
-        if response.status_code != 200 or not data:
-            raise Exception(f"Failed to fetch data for {self.symbol}. Check your symbol, interval, or date range.")
+        for attempt in range(1, self.max_retries + 1):
+            try:
+                response = requests.get(self.base_url, params=params)
+                data = response.json()
 
-        return data
+                if response.status_code == 200 and data:
+                    return data
+                else:
+                    raise Exception(f"Error {response.status_code}: {response.text}")
+
+            except Exception as e:
+                print(f"Attempt {attempt}: Failed to fetch data for {self.symbol}. Error: {e}")
+                if attempt < self.max_retries:
+                    print(f"Retrying in {self.retry_delay} seconds...")
+                    time.sleep(self.retry_delay)
+                else:
+                    raise Exception(f"Exceeded maximum retries for {self.symbol}.") from e
 
     def process_data(self, data):
         df = pd.DataFrame(data, columns=[
@@ -34,7 +48,6 @@ class BinanceIngestionData:
             "Taker Buy Quote Asset Volume", "Ignore"
         ])
 
-        # Convert to proper data types
         df["Open Time"] = pd.to_datetime(df["Open Time"], unit="ms")
         df.set_index("Open Time", inplace=True)
         df = df.astype({
