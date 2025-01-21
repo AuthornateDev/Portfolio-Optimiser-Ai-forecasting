@@ -1,9 +1,5 @@
 version: '3.0'
 
-networks:
-  app_network:
-    driver: bridge
-
 services:
   app:
     build:
@@ -12,8 +8,5 @@ services:
     container_name: Forecasting_Pipeline
     ports:
       - "8000:8000"
-    volumes:
-      - .:/app
-    networks:
-      - app_network
-
+    environment:
+      PORT: 8000

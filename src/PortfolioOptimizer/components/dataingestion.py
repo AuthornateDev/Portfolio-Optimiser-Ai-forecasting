@@ -92,26 +92,39 @@ class DataIngestion:
 
         return pd.DataFrame(all_data)
 
-    async def fetch_last_year_daily(self):
-        """
-        Fetches cryptocurrency data for the last year, capturing daily details.
-        Saves the data into a single CSV file in the artifacts directory.
-        """
+
+    async def fetch_last_year_daily(self, max_retries: int = 3):
         aggregated_data = []
         current_time = datetime.now()
         start_time = current_time - timedelta(days=1050)
 
         while current_time > start_time:
-            logger.info(f"Fetching data for {current_time.strftime('%Y-%m-%d')}...")
-            df = await self.fetch_crypto_data_async()
-            if not df.empty:
-                df['date'] = current_time.strftime('%Y-%m-%d')
-                aggregated_data.append(df)
-            else:
-                logger.warning("No data fetched for this day.")
+            retry_count = 0
+            success = False
+
+            while retry_count < max_retries and not success:
+                try:
+                    logger.info(f"Fetching data for {current_time.strftime('%Y-%m-%d')}... (Attempt {retry_count + 1}/{max_retries})")
+                    df = await self.fetch_crypto_data_async()
+                    if not df.empty:
+                        df['date'] = current_time.strftime('%Y-%m-%d')
+                        aggregated_data.append(df)
+                        success = True
+                    else:
+                        logger.warning("No data fetched for this day.")
+                        success = True  # No data is considered a non-breaking issue.
+                except Exception as e:
+                    retry_count += 1
+                    logger.error(f"Error fetching data for {current_time.strftime('%Y-%m-%d')}: {str(e)}")
+                    if retry_count < max_retries:
+                        logger.info(f"Retrying in 5 seconds...")
+                        await asyncio.sleep(5)
+                    else:
+                        logger.error(f"Max retries reached for {current_time.strftime('%Y-%m-%d')}. Skipping this day.")
+                        break
 
             current_time -= timedelta(days=1)
-            await asyncio.sleep(1)  
+            await asyncio.sleep(1)  # Small delay between fetching days.
 
         if aggregated_data:
             final_df = pd.concat(aggregated_data, ignore_index=True)
