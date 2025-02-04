@@ -2,6 +2,11 @@ import pandas as pd
 import requests
 import datetime
 import time
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 class BinanceIngestionData:
     def __init__(self, symbol, interval, start_date, end_date, output_dir):
@@ -10,9 +15,14 @@ class BinanceIngestionData:
         self.start_date = start_date
         self.end_date = end_date
         self.output_dir = output_dir
-        self.base_url = "https://api.binance.com/api/v3/klines"
-        self.max_retries = 5  # Maximum number of retries
-        self.retry_delay = 5  # Delay between retries in seconds
+        self.base_url = "https://api.binance.com/api/v1/klines"
+        self.api_key = os.getenv("BINANCE_API_KEY")  
+        self.secret_key = os.getenv("BINANCE_SECRET_KEY")  
+        self.max_retries = 5  
+        self.retry_delay = 5  
+
+        if not self.api_key or not self.secret_key:
+            raise ValueError("API key and/or secret key not found in environment variables")
 
     def fetch_data(self):
         params = {
@@ -23,9 +33,13 @@ class BinanceIngestionData:
             "limit": 1000
         }
 
+        headers = {
+            "X-MBX-APIKEY": self.api_key  
+        }
+
         for attempt in range(1, self.max_retries + 1):
             try:
-                response = requests.get(self.base_url, params=params)
+                response = requests.get(self.base_url, params=params, headers=headers)
                 data = response.json()
 
                 if response.status_code == 200 and data:
@@ -68,3 +82,4 @@ class BinanceIngestionData:
         file_path = f"{self.output_dir}/{self.symbol}_2Y.csv"
         df.to_csv(file_path)
         print(f"Data for {self.symbol} saved to {file_path}")
+
