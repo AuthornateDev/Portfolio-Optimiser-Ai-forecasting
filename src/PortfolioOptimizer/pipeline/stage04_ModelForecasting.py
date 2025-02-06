@@ -1,6 +1,8 @@
 from PortfolioOptimizer.logging import logger
 from PortfolioOptimizer.utils.utils import read_yaml
 from PortfolioOptimizer.components.modelforecasting import ModelForecasting
+
+
 def main():
     logger.info("Reading configuration for Model Forecasting.")
     config_path = "config/config.yaml"

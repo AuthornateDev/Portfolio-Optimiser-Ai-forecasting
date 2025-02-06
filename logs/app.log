@@ -2041,3 +2041,198 @@
 
 
 2025-02-06 10:40:10,137 - pipeline.py - None - INFO - Completed the PortfolioOptimizer Pipeline.
+2025-02-06 12:48:52,784 - pipeline.py - None - INFO - Starting the PortfolioOptimizer Pipeline.
+2025-02-06 12:48:52,784 - pipeline.py - None - INFO - Reading configuration for the pipeline.
+2025-02-06 12:48:52,789 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 01: Data Ingestion 🫠 <<<<<<<<<<<<< 
+2025-02-06 12:48:53,338 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BTCUSDT
+2025-02-06 12:48:53,765 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ETHUSDT
+2025-02-06 12:48:54,298 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BNBUSDT
+2025-02-06 12:48:54,676 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DOGEUSDT
+2025-02-06 12:48:55,055 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LINKUSDT
+2025-02-06 12:48:55,454 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DOTUSDT
+2025-02-06 12:48:55,836 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LTCUSDT
+2025-02-06 12:48:56,202 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for XRPUSDT
+2025-02-06 12:48:56,566 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for SOLUSDT
+2025-02-06 12:48:56,973 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ADAUSDT
+2025-02-06 12:49:18,798 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for USDTUSDT: Exceeded maximum retries for USDTUSDT.
+2025-02-06 12:49:19,174 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for USDCUSDT
+2025-02-06 12:49:19,541 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for TRXUSDT
+2025-02-06 12:49:19,914 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for AVAXUSDT
+2025-02-06 12:49:20,285 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for XLMUSDT
+2025-02-06 12:49:20,686 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for SHIBUSDT
+2025-02-06 12:49:42,447 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for LEOUSDT: Exceeded maximum retries for LEOUSDT.
+2025-02-06 12:49:42,827 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BCHUSDT
+2025-02-06 12:49:43,216 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for UNIUSDT
+2025-02-06 12:49:43,607 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for NEARUSDT
+2025-02-06 12:50:05,302 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for DAIUSDT: Exceeded maximum retries for DAIUSDT.
+2025-02-06 12:50:05,691 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for AAVEUSDT
+2025-02-06 12:50:06,075 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for HBARUSDT
+2025-02-06 12:50:06,781 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ICPUSDT
+2025-02-06 12:50:07,168 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ETCUSDT
+2025-02-06 12:50:07,575 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for XMRUSDT
+2025-02-06 12:50:07,983 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for VETUSDT
+2025-02-06 12:50:29,757 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for CROUSDT: Exceeded maximum retries for CROUSDT.
+2025-02-06 12:50:30,148 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ALGOUSDT
+2025-02-06 12:50:51,866 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for OKBUSDT: Exceeded maximum retries for OKBUSDT.
+2025-02-06 12:50:52,246 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for FILUSDT
+2025-02-06 12:50:52,625 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for RAYUSDT
+2025-02-06 12:50:52,996 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for STXUSDT
+2025-02-06 12:50:53,375 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for THETAUSDT
+2025-02-06 12:51:15,105 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for GATUSDT: Exceeded maximum retries for GATUSDT.
+2025-02-06 12:51:15,489 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for FTMUSDT
+2025-02-06 12:51:15,876 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for GRTUSDT
+2025-02-06 12:51:16,300 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for OMUSDT
+2025-02-06 12:51:16,681 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LDOUSDT
+2025-02-06 12:51:17,059 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DEXEUSDT
+2025-02-06 12:51:17,533 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for INJUSDT
+2025-02-06 12:51:18,019 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ATOMUSDT
+2025-02-06 12:51:18,546 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for QNTUSDT
+2025-02-06 12:51:18,918 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for SANDUSDT
+2025-02-06 12:51:40,734 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for XDCUSDT: Exceeded maximum retries for XDCUSDT.
+2025-02-06 12:51:41,125 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for MANAUSDT
+2025-02-06 12:51:41,510 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for FLOKIUSDT
+2025-02-06 12:51:41,920 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for JASMYUSDT
+2025-02-06 12:51:42,307 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for EOSUSDT
+2025-02-06 12:51:42,768 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for XTZUSDT
+2025-02-06 12:52:04,476 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for SPXUSDT: Exceeded maximum retries for SPXUSDT.
+2025-02-06 12:52:26,195 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for MIOTAUSDT: Exceeded maximum retries for MIOTAUSDT.
+2025-02-06 12:52:26,582 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ENSUSDT
+2025-02-06 12:52:26,946 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for PYTHUSDT
+2025-02-06 12:52:48,638 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for MNTUSDT: Exceeded maximum retries for MNTUSDT.
+2025-02-06 12:52:49,044 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for VETUSDT
+2025-02-06 12:53:10,836 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for CROUSDT: Exceeded maximum retries for CROUSDT.
+2025-02-06 12:53:11,188 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for JUPUSDT
+2025-02-06 12:53:32,984 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for BOPBUSDT: Exceeded maximum retries for BOPBUSDT.
+2025-02-06 12:53:33,347 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for RNDRUSDT
+2025-02-06 12:53:33,719 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for OMUSDT
+2025-02-06 12:53:34,334 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LDOUSDT
+2025-02-06 12:53:34,713 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DEXEUSDT
+2025-02-06 12:53:35,125 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for FLOWUSDT
+2025-02-06 12:53:35,514 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for CRVUSDT
+2025-02-06 12:53:57,200 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for BTTUSDT: Exceeded maximum retries for BTTUSDT.
+2025-02-06 12:54:19,333 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for BEAMUSDT: Exceeded maximum retries for BEAMUSDT.
+2025-02-06 12:54:19,700 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ARUSDT
+2025-02-06 12:54:20,074 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for AXSUSDT
+2025-02-06 12:54:41,764 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for AIOZUSDT: Exceeded maximum retries for AIOZUSDT.
+2025-02-06 12:54:42,210 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for STRKUSDT
+2025-02-06 12:54:42,661 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for MANAUSDT
+2025-02-06 12:55:04,430 - stage01_DataIngestion_Binance.py - None - ERROR - Error processing data for BRETTUSDT: Exceeded maximum retries for BRETTUSDT.
+2025-02-06 12:55:04,431 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 01: Data Ingestion 👍 <<<<<<<<<<<<< 
+
+
+2025-02-06 12:55:04,431 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 02: Data Processing 🫠 <<<<<<<<<<<<< 
+2025-02-06 12:55:06,028 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BTCUSDT_Featured.csv
+2025-02-06 12:55:07,522 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ETHUSDT_Featured.csv
+2025-02-06 12:55:12,460 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BNBUSDT_Featured.csv
+2025-02-06 12:55:16,758 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DOGEUSDT_Featured.csv
+2025-02-06 12:55:21,132 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LINKUSDT_Featured.csv
+2025-02-06 12:55:25,259 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DOTUSDT_Featured.csv
+2025-02-06 12:55:29,574 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LTCUSDT_Featured.csv
+2025-02-06 12:55:33,492 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/XRPUSDT_Featured.csv
+2025-02-06 12:55:37,601 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/SOLUSDT_Featured.csv
+2025-02-06 12:55:41,460 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ADAUSDT_Featured.csv
+2025-02-06 12:55:41,460 - stage02_DataProcessing.py - None - WARNING - File not found: artifacts/USDTUSDT_2Y.csv
+2025-02-06 12:55:44,231 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/USDCUSDT_Featured.csv
+2025-02-06 12:55:47,511 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/TRXUSDT_Featured.csv
+2025-02-06 12:55:51,661 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/AVAXUSDT_Featured.csv
+2025-02-06 12:55:55,808 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/XLMUSDT_Featured.csv
+2025-02-06 12:55:56,987 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/SHIBUSDT_Featured.csv
+2025-02-06 12:55:56,988 - stage02_DataProcessing.py - None - WARNING - File not found: artifacts/LEOUSDT_2Y.csv
+2025-02-06 12:56:01,225 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BCHUSDT_Featured.csv
+2025-02-06 12:56:06,101 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/UNIUSDT_Featured.csv
+2025-02-06 12:56:13,296 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/NEARUSDT_Featured.csv
+2025-02-06 12:56:13,297 - stage02_DataProcessing.py - None - WARNING - File not found: artifacts/DAIUSDT_2Y.csv
+2025-02-06 12:56:15,974 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/AAVEUSDT_Featured.csv
+2025-02-06 12:56:20,543 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/HBARUSDT_Featured.csv
+2025-02-06 12:56:25,051 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ICPUSDT_Featured.csv
+2025-02-06 12:56:29,320 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ETCUSDT_Featured.csv
+2025-02-06 12:56:32,444 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/XMRUSDT_Featured.csv
+2025-02-06 12:56:34,433 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/VETUSDT_Featured.csv
+2025-02-06 12:56:34,434 - stage02_DataProcessing.py - None - WARNING - File not found: artifacts/CROUSDT_2Y.csv
+2025-02-06 12:56:38,260 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ALGOUSDT_Featured.csv
+2025-02-06 12:56:38,260 - stage02_DataProcessing.py - None - WARNING - File not found: artifacts/OKBUSDT_2Y.csv
+2025-02-06 12:56:42,394 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/FILUSDT_Featured.csv
+2025-02-06 12:56:46,690 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/RAYUSDT_Featured.csv
+2025-02-06 12:56:50,651 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/STXUSDT_Featured.csv
+2025-02-06 12:56:54,722 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/THETAUSDT_Featured.csv
+2025-02-06 12:56:54,723 - stage02_DataProcessing.py - None - WARNING - File not found: artifacts/GATUSDT_2Y.csv
+2025-02-06 12:56:58,536 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/FTMUSDT_Featured.csv
+2025-02-06 12:57:02,139 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/GRTUSDT_Featured.csv
+2025-02-06 12:57:06,101 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/OMUSDT_Featured.csv
+2025-02-06 12:57:10,107 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LDOUSDT_Featured.csv
+2025-02-06 12:57:14,281 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DEXEUSDT_Featured.csv
+2025-02-06 12:57:47,744 - pipeline.py - None - INFO - Starting the PortfolioOptimizer Pipeline.
+2025-02-06 12:57:47,744 - pipeline.py - None - INFO - Reading configuration for the pipeline.
+2025-02-06 12:57:47,746 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 01: Data Ingestion 🫠 <<<<<<<<<<<<< 
+2025-02-06 12:57:48,200 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BTCUSDT
+2025-02-06 12:57:48,618 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for ETHUSDT
+2025-02-06 12:57:49,005 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for BNBUSDT
+2025-02-06 12:57:49,408 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for DOGEUSDT
+2025-02-06 12:57:49,804 - stage01_DataIngestion_Binance.py - None - INFO - Successfully processed data for LINKUSDT
+2025-02-06 12:57:49,805 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 01: Data Ingestion 👍 <<<<<<<<<<<<< 
+
+
+2025-02-06 12:57:49,805 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 02: Data Processing 🫠 <<<<<<<<<<<<< 
+2025-02-06 12:57:51,313 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BTCUSDT_Featured.csv
+2025-02-06 12:57:52,684 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/ETHUSDT_Featured.csv
+2025-02-06 12:57:56,638 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/BNBUSDT_Featured.csv
+2025-02-06 12:58:00,565 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/DOGEUSDT_Featured.csv
+2025-02-06 12:58:04,904 - stage02_DataProcessing.py - None - INFO - Processed and saved: artifacts/Processed_DFs/LINKUSDT_Featured.csv
+2025-02-06 12:58:04,904 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 02: Data Processing 👍 <<<<<<<<<<<<< 
+
+
+2025-02-06 12:58:04,905 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 03: Model Training 🫠 <<<<<<<<<<<<< 
+2025-02-06 12:58:04,906 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BTCUSDT from artifacts/Processed_DFs/BTCUSDT_Featured.csv
+2025-02-06 12:58:04,915 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BTCUSDT.
+2025-02-06 12:58:04,919 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BTCUSDT.
+2025-02-06 12:58:05,378 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BTCUSDT.
+2025-02-06 12:58:05,387 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BTCUSDT.
+2025-02-06 12:58:05,389 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BTCUSDT_Forecast.csv
+2025-02-06 12:58:05,390 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for BTCUSDT.
+2025-02-06 12:58:07,260 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for ETHUSDT from artifacts/Processed_DFs/ETHUSDT_Featured.csv
+2025-02-06 12:58:07,283 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for ETHUSDT.
+2025-02-06 12:58:07,299 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for ETHUSDT.
+2025-02-06 12:58:09,948 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for ETHUSDT.
+2025-02-06 12:58:09,957 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for ETHUSDT.
+2025-02-06 12:58:09,960 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/ETHUSDT_Forecast.csv
+2025-02-06 12:58:09,960 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for ETHUSDT.
+2025-02-06 12:58:10,371 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for BNBUSDT from artifacts/Processed_DFs/BNBUSDT_Featured.csv
+2025-02-06 12:58:10,396 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for BNBUSDT.
+2025-02-06 12:58:10,401 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for BNBUSDT.
+2025-02-06 12:58:11,621 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for BNBUSDT.
+2025-02-06 12:58:11,629 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for BNBUSDT.
+2025-02-06 12:58:11,632 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/BNBUSDT_Forecast.csv
+2025-02-06 12:58:11,632 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for BNBUSDT.
+2025-02-06 12:58:12,022 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for DOGEUSDT from artifacts/Processed_DFs/DOGEUSDT_Featured.csv
+2025-02-06 12:58:12,051 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for DOGEUSDT.
+2025-02-06 12:58:12,063 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for DOGEUSDT.
+2025-02-06 12:58:14,037 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for DOGEUSDT.
+2025-02-06 12:58:14,045 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for DOGEUSDT.
+2025-02-06 12:58:14,048 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/DOGEUSDT_Forecast.csv
+2025-02-06 12:58:14,048 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for DOGEUSDT.
+2025-02-06 12:58:14,574 - stage03_ModelTrainingXGBoost.py - None - INFO - Loading processed data for LINKUSDT from artifacts/Processed_DFs/LINKUSDT_Featured.csv
+2025-02-06 12:58:14,622 - stage03_ModelTrainingXGBoost.py - None - INFO - Preprocessing data for LINKUSDT.
+2025-02-06 12:58:14,640 - stage03_ModelTrainingXGBoost.py - None - INFO - Training XGBoost model for LINKUSDT.
+2025-02-06 12:58:17,308 - stage03_ModelTrainingXGBoost.py - None - INFO - Forecasting future values for LINKUSDT.
+2025-02-06 12:58:17,315 - stage03_ModelTrainingXGBoost.py - None - INFO - Saving forecast results for LINKUSDT.
+2025-02-06 12:58:17,318 - modeltrainingXGBoost.py - None - INFO - Forecast saved at: artifacts/Forecasts/LINKUSDT_Forecast.csv
+2025-02-06 12:58:17,319 - stage03_ModelTrainingXGBoost.py - None - INFO - Plotting forecast results for LINKUSDT.
+2025-02-06 12:58:17,884 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 03: Model Training 👍 <<<<<<<<<<<<< 
+
+
+2025-02-06 12:58:17,902 - pipeline.py - None - INFO - >>>>>>>>>>>>> Starting Stage 04: Model Forecasting 🫠 <<<<<<<<<<<<< 
+2025-02-06 12:58:17,902 - stage04_ModelForecasting.py - None - INFO - Reading configuration for Model Forecasting.
+2025-02-06 12:58:17,910 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BTCUSDT.
+2025-02-06 12:58:17,991 - modelforecasting.py - None - INFO - Plotting forecast for BTCUSDT.
+2025-02-06 12:58:18,407 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for ETHUSDT.
+2025-02-06 12:58:18,497 - modelforecasting.py - None - INFO - Plotting forecast for ETHUSDT.
+2025-02-06 12:58:19,094 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for BNBUSDT.
+2025-02-06 12:58:19,202 - modelforecasting.py - None - INFO - Plotting forecast for BNBUSDT.
+2025-02-06 12:58:20,002 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for DOGEUSDT.
+2025-02-06 12:58:20,107 - modelforecasting.py - None - INFO - Plotting forecast for DOGEUSDT.
+2025-02-06 12:58:20,653 - stage04_ModelForecasting.py - None - INFO - Generating forecast plot for LINKUSDT.
+2025-02-06 12:58:20,755 - modelforecasting.py - None - INFO - Plotting forecast for LINKUSDT.
+2025-02-06 12:58:21,431 - pipeline.py - None - INFO - >>>>>>>>>>>>> Completed Stage 04: Model Forecasting 👍 <<<<<<<<<<<<< 
+
+
+2025-02-06 12:58:21,438 - pipeline.py - None - INFO - Completed the PortfolioOptimizer Pipeline.

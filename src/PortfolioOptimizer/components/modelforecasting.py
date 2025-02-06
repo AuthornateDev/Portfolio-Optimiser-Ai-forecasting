@@ -17,6 +17,7 @@ class ModelForecasting:
         self.forecast_dir = self.config['paths']['foresast_dir']
         self.forecast_period = self.config['forecast_period']
         self.symbols = self.config['symbols']['currencies']
+
     def load_data(self, symbol):
         """
         Load processed and forecast data for a given symbol.
@@ -38,6 +39,7 @@ class ModelForecasting:
         start_date = last_date - timedelta(days=180)
         historical_data = historical_data[historical_data['ds'] >= start_date]
         return historical_data, forecast_data
+    
     def plot_forecast(self, symbol):
         """
         Plot forecast results alongside historical data for a given symbol.

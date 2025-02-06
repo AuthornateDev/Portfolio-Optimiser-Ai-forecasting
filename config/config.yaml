@@ -2,7 +2,8 @@ paths:
   artifacts_dir: "artifacts"
   processed_dir : "artifacts/Processed_DFs"
   foresast_dir : "artifacts/Forecasts"
-
+  
+  
 symbols:
   currencies:
     - BTCUSDT
@@ -10,11 +11,7 @@ symbols:
     - BNBUSDT
     - DOGEUSDT
     - LINKUSDT
-    - DOTUSDT
-    - LTCUSDT 
-    - XRPUSDT
-    - SOLUSDT
-    - ADAUSDT
+
 
 
 forecast_period: 180
