@@ -1,1 +1,2 @@
 PortfolioOptimizer
+GitPat=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
