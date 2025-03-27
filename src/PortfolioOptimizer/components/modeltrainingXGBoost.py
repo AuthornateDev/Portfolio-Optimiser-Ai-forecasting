@@ -6,7 +6,8 @@ from datetime import timedelta
 from PortfolioOptimizer.logging import logger
 from PortfolioOptimizer.utils.utils import read_yaml
 import plotly.graph_objects as go
-
+from sklearn.ensemble import RandomForestRegressor
+import lightgbm as lgb
 
 class XGBoostForecasting:
     def __init__(self, data, date_column, target_column, config):
@@ -77,8 +78,16 @@ class XGBoostForecasting:
         target_reduced = self.data['y'].iloc[-training_period:]
         self.model_reduced_features.fit(features_reduced, target_reduced)
 
+        # Random Forest model
+        self.rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
+        self.rf_model.fit(features, target)
+
+        # LightGBM model
+        self.lgbm_model = lgb.LGBMRegressor(objective='regression', num_leaves=31, learning_rate=0.05, n_estimators=200)
+        self.lgbm_model.fit(features, target)
+
     def forecast(self, future_periods=180):
-        """Forecast future data using XGBoost."""
+        """Forecast future data using XGBoost, Random Forest, and LightGBM."""
         last_date = self.data['ds'].max()
         forecast_dates = [last_date + timedelta(days=i) for i in range(1, future_periods + 1)]
         future_features = pd.DataFrame({
@@ -95,6 +104,8 @@ class XGBoostForecasting:
                 future_features[col] = self.data[col].iloc[-1]  # Use last known value
 
         forecast_values = self.model.predict(future_features[['day', 'month', 'weekday', 'weekofyear', 'quarter']])
+        forecast_rf_values = self.rf_model.predict(future_features[['day', 'month', 'weekday', 'weekofyear', 'quarter']])
+        forecast_lgbm_values = self.lgbm_model.predict(future_features[['day', 'month', 'weekday', 'weekofyear', 'quarter']])
 
         extended_features_columns = ['day', 'month', 'weekday', 'weekofyear', 'quarter', 'High_Low_Diff', 'Open_Close_Diff', 'Average_Price', 'Volume_Weighted_Price', 'forecast', 'trend', 'Triple_Multiplicative_ETS', 'Triple_Additive_ETS']
         available_extended_features = [col for col in extended_features_columns if col in self.data.columns]
@@ -106,12 +117,16 @@ class XGBoostForecasting:
         adjustment_factor = last_training_value - forecast_values[0]
         adjustment_factor_extended = last_training_value - forecast_values_extended[0]
         adjustment_factor_reduced = last_training_value - forecast_values_reduced[0]
+        adjustment_factor_rf = last_training_value - forecast_rf_values[0]
+        adjustment_factor_lgbm = last_training_value - forecast_lgbm_values[0]
 
         forecast_values += adjustment_factor
         forecast_values_extended += adjustment_factor_extended
         forecast_values_reduced += adjustment_factor_reduced
+        forecast_rf_values += adjustment_factor_rf
+        forecast_lgbm_values += adjustment_factor_lgbm
 
-        return pd.DataFrame({'ds': forecast_dates, 'yhat': forecast_values, 'yhat_extended': forecast_values_extended, 'yhat_reduced': forecast_values_reduced})
+        return pd.DataFrame({'ds': forecast_dates, 'yhat': forecast_values, 'yhat_extended': forecast_values_extended, 'yhat_reduced': forecast_values_reduced, 'yhat_rf': forecast_rf_values, 'yhat_lgbm': forecast_lgbm_values})
 
 
     def save_forecast(self, forecast, coin_name):
@@ -126,10 +141,14 @@ class XGBoostForecasting:
         """Plot the forecast results."""
         fig = go.Figure()
         fig.add_trace(go.Scatter(x=self.data['ds'], y=self.data['y'], mode='lines', name='Actual', line=dict(color='blue')))
-        fig.add_trace(go.Scatter(x=forecast['ds'], y=forecast['yhat'], mode='lines', name='Forecast (Base)', line=dict(color='green')))
+        fig.add_trace(go.Scatter(x=forecast['ds'], y=forecast['yhat'], mode='lines', name='XGBoost', line=dict(color='green')))
         if 'yhat_extended' in forecast.columns:
-            fig.add_trace(go.Scatter(x=forecast['ds'], y=forecast['yhat_extended'], mode='lines', name='Forecast (Extended)', line=dict(color='red')))
+            fig.add_trace(go.Scatter(x=forecast['ds'], y=forecast['yhat_extended'], mode='lines', name='XGBoost Extended', line=dict(color='red')))
         if 'yhat_reduced' in forecast.columns:
-            fig.add_trace(go.Scatter(x=forecast['ds'], y=forecast['yhat_reduced'], mode='lines', name='Forecast (Reduced)', line=dict(color='orange')))
+            fig.add_trace(go.Scatter(x=forecast['ds'], y=forecast['yhat_reduced'], mode='lines', name='XGBoost Reduced', line=dict(color='orange')))
+        if 'yhat_rf' in forecast.columns:
+            fig.add_trace(go.Scatter(x=forecast['ds'], y=forecast['yhat_rf'], mode='lines', name='Random Forest', line=dict(color='purple')))
+        if 'yhat_lgbm' in forecast.columns:
+            fig.add_trace(go.Scatter(x=forecast['ds'], y=forecast['yhat_lgbm'], mode='lines', name='LightGBM', line=dict(color='brown')))
         fig.update_layout(title=f'Forecast for {coin_name}', xaxis_title='Date', yaxis_title='Value', template='plotly_dark')
         fig.show()
