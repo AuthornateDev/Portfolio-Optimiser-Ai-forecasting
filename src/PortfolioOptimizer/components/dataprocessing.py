@@ -5,7 +5,6 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-
 class DataProcessing:
     def __init__(self, csv_path):
         self.csv_path = csv_path
@@ -45,7 +44,6 @@ class DataProcessing:
         self.add_features()
         prophet_results = self.generate_prophet_features()
         self.generate_ets_features()
-        # Merge Prophet results with the original dataframe
         prophet_results['ds'] = prophet_results['ds'].astype(str)
         self.df['ds'] = self.df['ds'].astype(str)
         featured_df = pd.merge(self.df, prophet_results, how='left', on='ds')
